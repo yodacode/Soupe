@@ -1,5 +1,4 @@
 <?php
-
 	/*
 		This is an example class script proceeding secured API
 		To use this class you should keep same as query string and function name
@@ -89,7 +88,9 @@
 			$result = $request->fetchAll(PDO::FETCH_ASSOC);
 
 			if(!empty($result)) {
-				$this->response($this->json($result), 200);
+				// $this->response($this->json($result), 200);
+				$this->json($result);
+				
 			}
 
 			$this->response('', 204);	// If no records "No Content" status
@@ -138,6 +139,21 @@
 		private function json($data){
 			if(is_array($data)){
 				return json_encode($data);
+			}
+		}
+
+		/*
+		 *	Encode array into JSON
+		*/
+		private function xml($data){
+			if(is_array($data)){
+				// $root = new SimpleXMLElement('<root><root/>');
+				// foreach ($data as $k => $v) {
+					
+				// }
+				// return json_encode($data);
+
+				return $data;
 			}
 		}
 	}
