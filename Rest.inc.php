@@ -25,6 +25,10 @@
 			echo $data;
 			exit;
 		}
+
+		public function setContentType($type) {
+			$this->_content_type = $type;
+		}
 		
 		private function get_status_message(){
 			$status = array(

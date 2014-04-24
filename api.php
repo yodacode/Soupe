@@ -88,8 +88,7 @@
 			$result = $request->fetchAll(PDO::FETCH_ASSOC);
 
 			if(!empty($result)) {
-				// $this->response($this->json($result), 200);
-				$this->json($result);
+				$this->response($this->xml($result), 200);
 				
 			}
 
@@ -137,6 +136,7 @@
 		 *	Encode array into JSON
 		*/
 		private function json($data){
+			$this->setContentType('application/json');
 			if(is_array($data)){
 				return json_encode($data);
 			}
@@ -146,14 +146,26 @@
 		 *	Encode array into JSON
 		*/
 		private function xml($data){
+			$this->setContentType('application/xml');
 			if(is_array($data)){
-				// $root = new SimpleXMLElement('<root><root/>');
-				// foreach ($data as $k => $v) {
-					
-				// }
-				// return json_encode($data);
+				$root = new SimpleXMLElement("<root></root>");
+				$root->addAttribute('newsPagePrefix', 'value goes here');
 
-				return $data;
+				foreach ($data as $k => $v) {					
+					$item = $root->addChild('item');
+					$item->addAttribute('id', $v['user_id']);
+
+					//add chid node
+					$name = $item->addChild('name');
+					$email = $item->addChild('email');										
+
+
+					$item->name = $v['user_fullname'];
+					$item->email = $v['user_email'];
+				}
+				
+				return $root->asXML();
+
 			}
 		}
 	}
