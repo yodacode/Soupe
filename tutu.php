@@ -1,24 +1,20 @@
 <?php
-$test_array = array (
-  'bla' => 'blub',
-  'foo' => 'bar',
-  'another_array' => array (
-    'stack' => 'overflow',
-  ),
-);
-
-// $xml = new SimpleXMLElement('<root/>');
-// array_walk_recursive($test_array, array ($xml, 'addChild'));
-// Header('Content-type: text/xml');
-// echo $xml->asXML();
-
-$newsXML = new SimpleXMLElement("<news></news>");
-$newsXML->addAttribute('newsPagePrefix', 'value goes here');
-$newsIntro = $newsXML->addChild('content');
-$newsIntro->addAttribute('type', 'latest');
-
-$newsIntro->addChild('prout');
-
-Header('Content-type: text/xml');
-echo $newsXML->asXML();
+	header('Content-Type: application/xml');
+	$root = simplexml_load_file('foot.xml');
+	// /$data = $root->xpath("//rencontre[@scored='0'][@scoree='0']");
+	foreach ($journnes as $journee) {
+		foreach ($ as $key => $value) {
+			# code...
+			var $toto = function () {
+				$bonjour = 'hello world';
+				if ($bonjour === 'hello wordl') {
+					# code...
+				}
+				if ($bonjour = 'lool') {
+					$bonjour .= 'la vies';
+				}
+			}
+		}
+	}	
+	return $root;
 ?>

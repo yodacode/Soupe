@@ -77,6 +77,17 @@
 		public function get_request_method(){
 			return $_SERVER['REQUEST_METHOD'];
 		}
+
+		public function getMissingParameter($params){
+			$missingParameters = array();
+			foreach ($params as $k => $v) {
+				if (is_null($v) || empty($v)) {
+					$isMissingParameter = true;
+					array_push($missingParameters, array($k => $v));					
+				}
+			};
+			return $missingParameters;
+		}
 		
 		private function inputs(){
 			switch($this->get_request_method()){

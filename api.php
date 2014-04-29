@@ -1,12 +1,12 @@
 <?php
-	
+
 	require_once("Rest.inc.php");
 
 	class API extends REST {
 
 		public $data = "";
 
-		const DB_DNS = "mysql:host=localhost;dbname=users";
+		const DB_DNS = "mysql:host=localhost;dbname=places";
 		const DB_USER = "root";
 		const DB_PASSWORD = "root";
 
@@ -44,26 +44,25 @@
 				$this->response('',404);				// If the method not exist with in this class, response would be "Page not found".
 		}
 
-		private function users(){
-
+		private function places(){
 			// Cross validation if the request method is GET else it will return "Not Acceptable" status
 			if($this->get_request_method() != "GET"){
 				$this->response('',406);
 			}
 
-			$request = $this->db->prepare("SELECT user_id, user_fullname, user_email FROM users");
+			$request = $this->db->prepare("SELECT id, name, address, description, latitude, longitude FROM place");
 			$request->execute();
 			$result = $request->fetchAll(PDO::FETCH_ASSOC);
 
 			if(!empty($result)) {
 				$this->response($this->xml($result), 200);
-				
 			}
 
 			$this->response('', 204);	// If no records "No Content" status
+
 		}
 
-		private function deleteUser(){
+		private function deletePlace(){
 			// Cross validation if the request method is DELETE else it will return "Not Acceptable" status
 			$id = (int) $this->_request['id'];
 
@@ -72,32 +71,38 @@
 			}
 
 			if($id > 0) {
-				$request = $this->db->prepare("DELETE FROM users WHERE user_id = :id");
+				$request = $this->db->prepare("DELETE FROM place WHERE id = :id");
 				$request->execute(array('id' => $id));
-				$this->response($this->json(array('response' => true)), 200);
+				$this->response($this->xml(array('response' => 'place has been deleted where id : ' . $id)), 200);
 			} else {
-				$this->response('',204);	// If no records "No Content" status
+				$this->response('', 204);	// If no records "No Content" status
 			}
 		}
 
-		private function addUser(){
+		private function addPlace(){
 			if($this->get_request_method() != "POST"){
-				$this->response('',406);
+				$this->response('', 406);
 			}
-
+			
 			$params = array(
-				'name' => $this->_request['name'],
-				'email' 	=> $this->_request['email'],
-				'password' => $this->_request['password'],
-				'status' 	=> $this->_request['status'],
+				'name' 			=> $this->_request['name'],
+				'address' 		=> $this->_request['address'],
+				'description' 	=> $this->_request['description'],
+				'latitude' 		=> $this->_request['latitude'],
+				'longitude' 	=> $this->_request['longitude'],
+				'town_id' 		=> $this->_request['town_id'],
 			);
+			
+			//if there is missing parameters
+			if (sizeof($this->getMissingParameter($params)) > 0) {
+				$this->response($this->xml($this->getMissingParameter($params)), 400);
+			}						
 
-			$request = $this->db->prepare("INSERT INTO users (user_fullname,user_email,user_password,user_status) VALUES (:name,:email,:password,:status)");
+			$request = $this->db->prepare("INSERT INTO place (name,address,description,latitude,longitude, town_id) VALUES (:name,:address,:description,:latitude,:longitude,:town_id)");
 			$request->execute($params);
 
-			
-			$this->response($this->json($params), 200);	
-			
+			$this->response($this->xml($params), 200);
+
 		}
 
 		/*
@@ -114,24 +119,30 @@
 		 *	Encode array into JSON
 		*/
 		private function xml($data){
+			
 			$this->setContentType('application/xml');
 			if(is_array($data)){
 				$root = new SimpleXMLElement("<root></root>");
-				$root->addAttribute('newsPagePrefix', 'value goes here');
 
-				foreach ($data as $k => $v) {					
-					$item = $root->addChild('item');
-					$item->addAttribute('id', $v['user_id']);
+					foreach ($data as $k => $v) {
+			
+						if (is_array($v)) {
+							
+							$item = $root->addChild('item');
+							$item->addAttribute('id', $v['id']);
 
-					//add chid node
-					$name = $item->addChild('name');
-					$email = $item->addChild('email');										
+							foreach ($v as $kk => $vv) {
+								$item->addChild($kk);
+								$item->$kk = $vv;
+							}
 
+						} else {
+							$item = $root->addChild($k);	
+							$root->$k = $v;
+						}
 
-					$item->name = $v['user_fullname'];
-					$item->email = $v['user_email'];
-				}
-				
+					}
+
 				return $root->asXML();
 
 			}
