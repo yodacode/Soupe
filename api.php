@@ -83,7 +83,7 @@
 			if($this->get_request_method() != "POST"){
 				$this->response('', 406);
 			}
-			
+
 			$params = array(
 				'name' 			=> $this->_request['name'],
 				'address' 		=> $this->_request['address'],
@@ -92,11 +92,11 @@
 				'longitude' 	=> $this->_request['longitude'],
 				'town_id' 		=> $this->_request['town_id'],
 			);
-			
+
 			//if there is missing parameters
-			if (sizeof($this->getMissingParameter($params)) > 0) {
-				$this->response($this->xml($this->getMissingParameter($params)), 400);
-			}						
+			if ($this->hasMissingParameters($params)) {
+				$this->response('', 400);
+			}
 
 			$request = $this->db->prepare("INSERT INTO place (name,address,description,latitude,longitude, town_id) VALUES (:name,:address,:description,:latitude,:longitude,:town_id)");
 			$request->execute($params);
@@ -119,15 +119,15 @@
 		 *	Encode array into JSON
 		*/
 		private function xml($data){
-			
+
 			$this->setContentType('application/xml');
 			if(is_array($data)){
 				$root = new SimpleXMLElement("<root></root>");
 
 					foreach ($data as $k => $v) {
-			
+
 						if (is_array($v)) {
-							
+
 							$item = $root->addChild('item');
 							$item->addAttribute('id', $v['id']);
 
@@ -137,7 +137,7 @@
 							}
 
 						} else {
-							$item = $root->addChild($k);	
+							$item = $root->addChild($k);
 							$root->$k = $v;
 						}
 
