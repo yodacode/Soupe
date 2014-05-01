@@ -104,7 +104,7 @@
 
 			//if there is missing parameters
 			if ($this->hasMissingParameters($params)) {
-				$this->response('', 400);
+				$this->response($this->xml(array('response' => 'missing parameters')), 400);
 			}
 
 			$request = $this->db->prepare("INSERT INTO place (name,address,description,latitude,longitude, town_id) VALUES (:name,:address,:description,:latitude,:longitude,:town_id)");
