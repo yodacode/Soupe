@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <h1>SOAP & REST</h1>
-<div class="col-md-3">
+<div class="col-md-3">	
 	<div class="page-header">
 		<h2>Recherche</h2>
 	</div>
@@ -45,8 +45,9 @@
 	</form>
 </div>
 <div class="col-md-9">
-	<div class="page-header">
-		<h2>Listing</h2>
+	<div class="page-header overflow">
+		<h2 class="pull-left">Listing</h2>
+		<button class="btn pull-right" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addPlace">Ajouter un lieu</button>
 	</div>
 	<div class="item">
 		<div class="col-md-5">

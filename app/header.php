@@ -8,6 +8,11 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      .overflow {
+        overflow: hidden;
+      }
+    </style>
 
   </head>
   <body>
