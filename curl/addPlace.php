@@ -10,7 +10,7 @@
 		'address' 		=> '12 avene de la republique',
 		'description' 	=> 'Un endoit ou on peut faire du skate',
 		'latitude' 		=> 131231000,
-		
+		'longitude' 	=> 131231000,
 		'town_id' 		=> 1,
 	);
 
