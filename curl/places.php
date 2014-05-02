@@ -30,7 +30,7 @@
 
 	$xml = new SimpleXMLElement($resp);
 	$xsl = new DOMDocument;
-	$xsl->load('collection.xsl');
+	$xsl->load('../app/listing.xsl');
 
 	$proc = new XSLTProcessor();
 	$proc->importStyleSheet($xsl);
