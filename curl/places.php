@@ -1,5 +1,5 @@
 <?php 
-	header('Content-Type: application/xml; charset=utf-8');
+	// header('Content-Type: application/xml; charset=utf-8');
 	
 	// Get cURL resource
 	$curl = curl_init();
@@ -27,5 +27,16 @@
 	//set the http code 
 	http_response_code($apiRespInfo['http_code']);
 
-	echo $resp;
- ?>
+
+	$xml = new SimpleXMLElement($resp);
+	$xsl = new DOMDocument;
+	$xsl->load('collection.xsl');
+
+	$proc = new XSLTProcessor();
+	$proc->importStyleSheet($xsl);
+
+	$data = $proc->transformToXML($xml);
+
+	echo $data;
+
+?>

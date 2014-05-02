@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<root>
+ <item id="15">
+	<id>15</id>
+	<name>Place du trocadero</name>
+	<address>28 rue toto</address>
+	<description>un endroit ou il y a beaucoup de touriste</description>
+	<latitude>26548</latitude>
+	<longitude>16934</longitude>
+ </item>
+ <item id="16">
+	<id>16</id>
+	<name>Place du trocadero</name>
+	<address>28 rue toto</address>
+	<description>un endroit ou il y a beaucoup de touriste</description>
+	<latitude>26548</latitude>
+	<longitude>16934</longitude>
+ </item>
+ <item id="17">
+	<id>17</id>
+	<name>Place du trocadero</name>
+	<address>28 rue toto</address>
+	<description>un endroit ou il y a beaucoup de touriste</description>
+	<latitude>26548</latitude>
+	<longitude>16934</longitude>
+ </item>
+ <item id="18">
+	<id>18</id>
+	<name>Place du trocadero</name>
+	<address>28 rue toto</address>
+	<description>un endroit ou il y a beaucoup de touriste</description>
+	<latitude>26548</latitude>
+	<longitude>16934</longitude>
+ </item>
+</root>
