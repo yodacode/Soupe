@@ -72,7 +72,7 @@
 
 		    </body>
   		</html>	
-    <xsl:text>footer</xsl:text>
+  		
   </xsl:template>
 
 </xsl:stylesheet>
