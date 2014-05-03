@@ -27,21 +27,53 @@
 
 	  		<!-- Modal -->
 			    <div class="modal fade" id="addPlace" tabindex="-1" role="dialog" aria-labelledby="addPlace" aria-hidden="true">
-			      <div class="modal-dialog">
-			        <div class="modal-content">
-			          <div class="modal-header">
-			            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-			            <h4 class="modal-title" id="addPlace">Ajouter une place</h4>
-			          </div>
-			          <div class="modal-body">
-			            ...
-			          </div>
-			          <div class="modal-footer">
-			            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			            <button type="button" class="btn btn-primary">Save</button>
-			          </div>
-			        </div>
-			      </div>
+		            <form action="add.php" method="post">
+				      	<div class="modal-dialog">
+					        <div class="modal-content">
+					          <div class="modal-header">
+					            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					            <h4 class="modal-title" id="addPlace">Ajouter une place</h4>
+					          </div>
+					          <div class="modal-body">
+					            	<div class="form-group">
+					            	    <label for="name">Nom</label>
+					            	    <input type="text" name="name" class="form-control" id="name" placeholder="Nom de la place"/>
+					            	  </div>
+					            	  <div class="form-group">
+					            	    <label for="address">Addresse</label>
+					            	    <input type="text" name="address" class="form-control" id="address" placeholder="address"/>
+					            	  </div>
+					            	  <div class="form-group">
+					            	    <label for="latitude">Latitude</label>
+					            	    <input type="text" name="latitude" class="form-control" id="latitude" placeholder="latitude"/>
+					            	  </div>
+					            	  <div class="form-group">
+					            	    <label for="longitude">Longitude</label>
+					            	    <input type="text" name="longitude" class="form-control" id="longitude" placeholder="longitude"/>
+					            	  </div>
+					            	  <div class="form-group">
+					            	    <label for="address">Description</label>
+					            	    <textarea name="description" class="form-control" rows="3"></textarea>
+					            	  </div>
+					            	  <div class="form-group">					            	  	
+					            	  	
+					            	  		<select name="town_id" class="form-control">
+					            	  		  <option value="1">1</option>					            	  		  
+					            	  		  <option value="1">Marseille</option>					            	  		  
+					            	  		  <option value="1">Marseille</option>					            	  		  
+					            	  		  <option value="1">Marseille</option>					            	  		  
+					            	  		  <option value="1">Marseille</option>					            	  		  
+					            	  		</select>
+					            	  	
+					            	  </div>
+					          </div>
+					          <div class="modal-footer">
+					            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					            <button type="submit" class="btn btn-primary">Save</button>
+					          </div>
+					        </div>
+					      </div>
+		            </form>
 			    </div>
 
 			    <!-- Modal -->
@@ -71,8 +103,8 @@
 			    <script type="text/javascript" src="../app/js/App.js"></script>
 
 		    </body>
-  		</html>	
-  		
+  		</html>
+
   </xsl:template>
 
 </xsl:stylesheet>

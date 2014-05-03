@@ -2,6 +2,9 @@
 	class Proxy {
 
 		const URL_GET_PLACES = 'http://rest.dev/api/places/';
+		const URL_DELETE_PLACE = 'http://rest.dev/api/deletePlace/?id=';
+		const URL_ADD_PLACE = 'http://rest.dev/api/addPlace';
+
 		public $_curl;
 
 		public function __construct(){
@@ -35,12 +38,12 @@
 		}
 
 		public function deletePlace($id){
-			
+
 			// Set some options - we are passing in a useragent too here
 			curl_setopt_array($this->_curl, array(
 			    CURLOPT_RETURNTRANSFER => 1,
 			    CURLOPT_CUSTOMREQUEST => 'DELETE',
-			    CURLOPT_URL => 'http://rest.dev/api/deletePlace/?id=' . $id,
+			    CURLOPT_URL => self::URL_DELETE_PLACE . $id,
 			));
 
 			// Send the request & save response to $resp
@@ -57,8 +60,30 @@
 		}
 
 
-		public function addPlace($data){
-			
+		public function addPlace($params){
+
+			// Set some options - we are passing in a useragent too here
+			curl_setopt_array($this->_curl, array(
+			    CURLOPT_RETURNTRANSFER => 1,
+			    CURLOPT_POST => true,
+			    CURLOPT_POSTFIELDS => http_build_query($params),
+			    CURLOPT_URL => self::URL_ADD_PLACE,
+			));
+
+			// Send the request & save response to $resp
+			$resp = curl_exec($this->_curl);
+
+
+		  	// We need to get Curl infos for the header_size and the http_code
+			$apiRespInfo = curl_getinfo($this->_curl);
+
+			// Close request to clear up some resources
+			curl_close($this->_curl);
+
+			//set the http code
+			http_response_code($apiRespInfo['http_code']);
+
+			return $resp;
 		}
 
 	}

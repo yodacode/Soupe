@@ -2,6 +2,8 @@
 	require_once('../curl/proxy.php');
 
 	$proxy = new Proxy();
-	$place = $proxy->deletePlace($_GET['id']);
+
+	$proxy->addPlace($_POST);	
+	
 	header('Location: index.php');
  ?>
