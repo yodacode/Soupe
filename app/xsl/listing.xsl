@@ -22,16 +22,9 @@
 	    					<div class="form-group">
 	    						<label class="control-label col-sm-3">Ville</label>
 	    						<div class="col-sm-9">
-	    							<select class="form-control">
-	    							  <option>1</option>
-	    							  <option>2</option>
-	    							  <option>3</option>
-	    							  <option>4</option>
-	    							  <option>5</option>
-	    							</select>
+	    							<select class="form-control" id="townsSelect"></select>
 	    						</div>
 	    					</div>
-
 	    				</form>
 	    			</div>
 	    			<div class="col-md-9">
