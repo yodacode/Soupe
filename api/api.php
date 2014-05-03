@@ -50,14 +50,20 @@
 				$this->response('',406);
 			}
 
-			$sql = sprintf('SELECT * FROM place %s',
-               !empty($this->_request['id']) ? 'WHERE id = :id' : null);
+			$sql = sprintf('SELECT * FROM place %s %s',
+               !empty($this->_request['id']) ? 'WHERE id = :id' : null,
+               !empty($this->_request['town_id']) ? 'WHERE town_id = :town_id' : null);
 
 			$request = $this->db->prepare($sql);
 
 			if (!empty($this->_request['id'])) {
 				$id = $this->_request['id'];
     			$request->bindParam(':id', $id, PDO::PARAM_INT);
+			}
+
+			if (!empty($this->_request['town_id'])) {
+				$townId = $this->_request['town_id'];
+    			$request->bindParam(':town_id', $townId, PDO::PARAM_INT);
 			}
 
 			$request->execute();
@@ -121,6 +127,52 @@
 
 			$this->response($this->xml($params), 200);
 
+		}
+
+		private function towns(){
+			
+			if($this->get_request_method() != "GET"){
+				$this->response('',406);
+			}
+
+			$sql = sprintf('SELECT * FROM town %s',
+               !empty($this->_request['country_id']) ? 'WHERE country_id = :country_id' : null);
+
+			$request = $this->db->prepare($sql);
+
+			if (!empty($this->_request['country_id'])) {
+				$countryId = $this->_request['country_id'];
+    			$request->bindParam(':country_id', $countryId, PDO::PARAM_INT);
+			}
+
+			$request->execute();
+			$result = $request->fetchAll(PDO::FETCH_ASSOC);
+
+			if(!empty($result)) {
+				$this->response($this->xml($result), 200);
+			}
+
+			$this->response('', 204);	// If no records "No Content" status
+		}
+
+		private function countries(){
+			
+			if($this->get_request_method() != "GET"){
+				$this->response('',406);
+			}
+
+			$sql = sprintf('SELECT * FROM country');               
+
+			$request = $this->db->prepare($sql);			
+
+			$request->execute();
+			$result = $request->fetchAll(PDO::FETCH_ASSOC);
+
+			if(!empty($result)) {
+				$this->response($this->xml($result), 200);
+			}
+
+			$this->response('', 204);	// If no records "No Content" status
 		}
 
 		/*

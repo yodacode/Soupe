@@ -12,29 +12,11 @@
 	    				<div class="page-header">
 	    					<h2>Recherche</h2>
 	    				</div>
-	    				<form class="form-horizontal" role="form">
-	    					<div class="form-group">
-	    						<label class="control-label col-sm-3">Continent</label>
-	    						<div class="col-sm-9">
-	    							<select class="form-control">
-	    							  <option>1</option>
-	    							  <option>2</option>
-	    							  <option>3</option>
-	    							  <option>4</option>
-	    							  <option>5</option>
-	    							</select>
-	    						</div>
-	    					</div>
+	    				<form class="form-horizontal" role="form">	    					
 	    					<div class="form-group">
 	    						<label class="control-label col-sm-3">Pays</label>
 	    						<div class="col-sm-9">
-	    							<select class="form-control">
-	    							  <option>1</option>
-	    							  <option>2</option>
-	    							  <option>3</option>
-	    							  <option>4</option>
-	    							  <option>5</option>
-	    							</select>
+	    							<select class="form-control" id="countriesSelect"></select>
 	    						</div>
 	    					</div>
 	    					<div class="form-group">
