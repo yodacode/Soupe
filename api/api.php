@@ -50,7 +50,16 @@
 				$this->response('',406);
 			}
 
-			$request = $this->db->prepare("SELECT id, name, address, description, latitude, longitude FROM place");
+			$sql = sprintf('SELECT * FROM place %s',
+               !empty($this->_request['id']) ? 'WHERE id = :id' : null);
+
+			$request = $this->db->prepare($sql);
+
+			if (!empty($this->_request['id'])) {
+				$id = $this->_request['id'];
+    			$request->bindParam(':id', $id, PDO::PARAM_INT);
+			}
+
 			$request->execute();
 			$result = $request->fetchAll(PDO::FETCH_ASSOC);
 
