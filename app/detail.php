@@ -3,8 +3,7 @@
 
 	$proxy = new Proxy();
 	$place = $proxy->getPlaces(array('id' => $_GET['id']));
-	// echo $place;
-	// die();
+
 	$xml = new SimpleXMLElement($place);
 	$xsl = new DOMDocument;
 	$xsl->load('xsl/detail.xsl');

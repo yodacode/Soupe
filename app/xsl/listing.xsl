@@ -81,11 +81,19 @@
   				<div class="col-md-6"><strong>7/10</strong></div>
   				<div class="col-md-6">3 Avis</div>
   			</div>
-  			<div class="col-md-7" style="min-height:150px;">
+  			<div class="col-md-6" style="min-height:150px;">
   				<p><strong><xsl:value-of select="address"/></strong></p>
   				<p>
   				 	<xsl:value-of select="description"/>
   				</p>
+  			</div>
+  			<div class="col-md-1">
+  				<a class="btn btn-danger btn-sm">
+					<xsl:attribute name="href">  							
+			    		<xsl:value-of select="concat('delete.php?id=', id)" />
+			   		</xsl:attribute>
+			   		<span class="glyphicon glyphicon-remove"></span>
+  				</a>
   			</div>
   		</div>
  	</xsl:template>
