@@ -1,5 +1,5 @@
 <?php 	
-	require_once('../curl/proxy.php');
+	require_once('../proxy/proxy.php');
 	
 	$proxy = new Proxy();
 	$places = $proxy->getPlaces();
