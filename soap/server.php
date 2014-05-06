@@ -1,14 +1,19 @@
 <?php 
-	require "lib/nusoap.php";
-	require "functions.php";
+	require "lib/nusoap.php";	
 
-	var_dump($_SERVER['SCRIPT_URI']);
-	die();
+	function getAutocompleteContacts($email, $num, $token) {
+		$result = array();
+		$result[] = array( 'contact' => 'Chaos Captain', 'email' => 'choas@sdfusidfousdf.com');
+		$result[] = array( 'contact' => 'Joe Joe', 'email' => 'choas@sdf768sdf798s7df987.com');
+
+		return $result;
+	}
 	
-	$server = new nusoap_server();
-	$server->configureWSDL("soap", "urn:" . $_SERVER['SCRIPT_URI']);
+	$HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';
 
-	$HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : ”;
+	$server = new nusoap_server();
+	$server->configureWSDL("soupe", "urn:soupe");
+
 
 	//Create a complex type
 	$server->wsdl->addComplexType(
@@ -39,8 +44,8 @@
 	$server->register('getAutocompleteContacts',
 	array('email' => 'xsd:string', 'num' => 'xsd:int', 'token' => 'xsd:string'), // input parameters
 	array('return' => 'tns:ContactArray'),
-	'urn:'.$_SERVER['SCRIPT_URI'], // namespace
-	'urn:'.$_SERVER['SCRIPT_URI'].'#getAutocompleteContacts', // soapaction
+	'urn:soupe', // namespace
+	'urn:soupe',
 	'rpc', // style
 	'encoded', // use
 	'Fetch array of address book contacts for use in autocomplete');

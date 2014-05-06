@@ -12,4 +12,5 @@
 	}
 	
 	$result = $client->call('getAutocompleteContacts', array('email'=>'something@asdf97s9d8f7sdf.com', 'num'=>5, 'token'=>"asd123") );
+	var_dump($result);
 ?>
