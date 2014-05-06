@@ -12,18 +12,21 @@
 	    				<div class="page-header">
 	    					<h2>Recherche</h2>
 	    				</div>
-	    				<form class="form-horizontal" role="form">	    					
+	    				<form class="form-horizontal" role="form" method="get">	    					
 	    					<div class="form-group">
 	    						<label class="control-label col-sm-3">Pays</label>
 	    						<div class="col-sm-9">
-	    							<select class="form-control" id="countriesSelect"></select>
+	    							<select name="country_id" class="form-control" id="countriesSelect"></select>
 	    						</div>
 	    					</div>
 	    					<div class="form-group">
 	    						<label class="control-label col-sm-3">Ville</label>
 	    						<div class="col-sm-9">
-	    							<select class="form-control" id="townsSelect"></select>
+	    							<select name="town_id" class="form-control" id="townsSelect"></select>
 	    						</div>
+	    					</div>
+	    					<div class="form-group overflow">
+	    						<input type="submit" class="btn pull-right" value="search"/>
 	    					</div>
 	    				</form>
 	    			</div>

@@ -1,8 +1,10 @@
 <?php 	
 	require_once('../proxy/proxy.php');
 	
+	var_dump($_GET);
+	
 	$proxy = new Proxy();
-	$places = $proxy->getPlaces();
+	$places = $proxy->getPlaces($_GET);
 
 	$xml = new SimpleXMLElement($places);
 	$xsl = new DOMDocument;

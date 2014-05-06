@@ -3,8 +3,8 @@
 	require_once('../proxy/proxy.php');
 	
 	$proxy = new Proxy();
-	// $towns = $proxy->getTowns(array('country_id' => 3));
-	$towns = $proxy->getTowns();
+	
+	$towns = $proxy->getTowns(array('country_id' => $_GET['country_id']));	
 
 	echo $towns;
  ?>
