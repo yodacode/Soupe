@@ -1,8 +1,8 @@
 <?php 
-	require_once('../proxy/proxy.php');
+	require_once('../curl/curl.php');
 
-	$proxy = new Proxy();
-	$place = $proxy->getPlaces(array('id' => $_GET['id']));
+	$curl = new curl();
+	$place = $curl->getPlaces(array('id' => $_GET['id']));
 
 	$xml = new SimpleXMLElement($place);
 	$xsl = new DOMDocument;

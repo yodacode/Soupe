@@ -1,9 +1,9 @@
 <?php 
-	require_once('../proxy/proxy.php');
+	require_once('../curl/curl.php');
 
-	$proxy = new Proxy();
+	$curl = new curl();
 
-	$proxy->addPlace($_POST);	
+	$curl->addPlace($_POST);	
 	
 	header('Location: index.php');
  ?>

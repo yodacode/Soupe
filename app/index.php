@@ -1,10 +1,10 @@
 <?php 	
-	require_once('../proxy/proxy.php');
+	require_once('../curl/curl.php');
 	
 	var_dump($_GET);
 	
-	$proxy = new Proxy();
-	$places = $proxy->getPlaces($_GET);
+	$curl = new curl();
+	$places = $curl->getPlaces($_GET);
 
 	$xml = new SimpleXMLElement($places);
 	$xsl = new DOMDocument;

@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" ?>
+<championnat division="1" saison="2003-2004">
+	<journee numero="1" date="01/08/2003">
+		<rencontre domicile="auxerre" exterieur="nice" scored="1" scoree="2" />
+		<rencontre domicile="guingamp" exterieur="marseille" scored="0" scoree="1" />
+		<rencontre domicile="lens" exterieur="lemans" scored="0" scoree="0" />
+		<rencontre domicile="lille" exterieur="lyon" scored="1" scoree="0" />
+		<rencontre domicile="metz" exterieur="ajaccio" scored="0" scoree="1" />
+		<rencontre domicile="monaco" exterieur="bordeaux" scored="2" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="rennes" scored="1" scoree="1" />
+		<rencontre domicile="parissg" exterieur="bastia" scored="0" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="nantes" scored="2" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="strasbourg" scored="1" scoree="1" />
+	</journee>
+	<journee numero="2" date="08/08/2003">
+		<rencontre domicile="bastia" exterieur="metz" scored="0" scoree="2" />
+		<rencontre domicile="bordeaux" exterieur="montpellier" scored="0" scoree="1" />
+		<rencontre domicile="lemans" exterieur="ajaccio" scored="0" scoree="1" />
+		<rencontre domicile="lille" exterieur="parissg" scored="1" scoree="0" />
+		<rencontre domicile="lyon" exterieur="monaco" scored="3" scoree="1" />
+		<rencontre domicile="marseille" exterieur="auxerre" scored="1" scoree="0" />
+		<rencontre domicile="nantes" exterieur="lens" scored="2" scoree="0" />
+		<rencontre domicile="nice" exterieur="sochaux" scored="1" scoree="0" />
+		<rencontre domicile="rennes" exterieur="toulouse" scored="1" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="guingamp" scored="2" scoree="0" />
+	</journee>
+	<journee numero="3" date="16/08/2003">
+		<rencontre domicile="ajaccio" exterieur="nantes" scored="1" scoree="3" />
+		<rencontre domicile="auxerre" exterieur="strasbourg" scored="3" scoree="2" />
+		<rencontre domicile="guingamp" exterieur="bordeaux" scored="1" scoree="3" />
+		<rencontre domicile="lemans" exterieur="nice" scored="1" scoree="1" />
+		<rencontre domicile="lens" exterieur="marseille" scored="2" scoree="1" />
+		<rencontre domicile="metz" exterieur="parissg" scored="0" scoree="1" />
+		<rencontre domicile="monaco" exterieur="bastia" scored="2" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="lyon" scored="0" scoree="2" />
+		<rencontre domicile="sochaux" exterieur="rennes" scored="1" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="lille" scored="0" scoree="3" />
+	</journee>
+	<journee numero="4" date="23/08/2003">
+		<rencontre domicile="bastia" exterieur="montpellier" scored="1" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="auxerre" scored="2" scoree="0" />
+		<rencontre domicile="lille" exterieur="metz" scored="1" scoree="1" />
+		<rencontre domicile="lyon" exterieur="toulouse" scored="0" scoree="0" />
+		<rencontre domicile="marseille" exterieur="sochaux" scored="2" scoree="0" />
+		<rencontre domicile="nantes" exterieur="lemans" scored="1" scoree="0" />
+		<rencontre domicile="nice" exterieur="ajaccio" scored="2" scoree="2" />
+		<rencontre domicile="parissg" exterieur="monaco" scored="2" scoree="4" />
+		<rencontre domicile="rennes" exterieur="guingamp" scored="0" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="lens" scored="0" scoree="1" />
+	</journee>
+	<journee numero="5" date="30/08/2003">
+		<rencontre domicile="ajaccio" exterieur="marseille" scored="0" scoree="1" />
+		<rencontre domicile="auxerre" exterieur="rennes" scored="2" scoree="1" />
+		<rencontre domicile="guingamp" exterieur="lyon" scored="2" scoree="0" />
+		<rencontre domicile="lemans" exterieur="strasbourg" scored="0" scoree="3" />
+		<rencontre domicile="lens" exterieur="nice" scored="1" scoree="0" />
+		<rencontre domicile="monaco" exterieur="metz" scored="1" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="parissg" scored="3" scoree="2" />
+		<rencontre domicile="nantes" exterieur="bordeaux" scored="0" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="lille" scored="2" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="bastia" scored="0" scoree="2" />
+	</journee>
+	<journee numero="6" date="13/09/2003">
+		<rencontre domicile="bastia" exterieur="guingamp" scored="4" scoree="2" />
+		<rencontre domicile="bordeaux" exterieur="sochaux" scored="1" scoree="3" />
+		<rencontre domicile="lille" exterieur="monaco" scored="1" scoree="1" />
+		<rencontre domicile="lyon" exterieur="auxerre" scored="1" scoree="1" />
+		<rencontre domicile="marseille" exterieur="lemans" scored="5" scoree="0" />
+		<rencontre domicile="metz" exterieur="montpellier" scored="2" scoree="1" />
+		<rencontre domicile="nice" exterieur="nantes" scored="1" scoree="0" />
+		<rencontre domicile="parissg" exterieur="toulouse" scored="2" scoree="1" />
+		<rencontre domicile="rennes" exterieur="lens" scored="2" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="ajaccio" scored="3" scoree="2" />
+	</journee>
+	<journee numero="7" date="20/09/2003">
+		<rencontre domicile="ajaccio" exterieur="rennes" scored="1" scoree="0" />
+		<rencontre domicile="auxerre" exterieur="bastia" scored="4" scoree="1" />
+		<rencontre domicile="guingamp" exterieur="parissg" scored="0" scoree="2" />
+		<rencontre domicile="lemans" exterieur="lyon" scored="0" scoree="2" />
+		<rencontre domicile="lens" exterieur="bordeaux" scored="1" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="monaco" scored="1" scoree="2" />
+		<rencontre domicile="nantes" exterieur="marseille" scored="1" scoree="0" />
+		<rencontre domicile="nice" exterieur="lille" scored="2" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="strasbourg" scored="3" scoree="0" />
+		<rencontre domicile="toulouse" exterieur="metz" scored="1" scoree="0" />
+	</journee>
+	<journee numero="8" date="27/09/2003">
+		<rencontre domicile="bastia" exterieur="sochaux" scored="2" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="ajaccio" scored="1" scoree="0" />
+		<rencontre domicile="lille" exterieur="montpellier" scored="1" scoree="1" />
+		<rencontre domicile="lyon" exterieur="lens" scored="4" scoree="0" />
+		<rencontre domicile="marseille" exterieur="nice" scored="2" scoree="1" />
+		<rencontre domicile="metz" exterieur="guingamp" scored="1" scoree="1" />
+		<rencontre domicile="monaco" exterieur="toulouse" scored="3" scoree="0" />
+		<rencontre domicile="parissg" exterieur="auxerre" scored="1" scoree="0" />
+		<rencontre domicile="rennes" exterieur="lemans" scored="2" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="nantes" scored="1" scoree="0" />
+	</journee>
+	<journee numero="9" date="04/10/2003">
+		<rencontre domicile="ajaccio" exterieur="lyon" scored="2" scoree="4" />
+		<rencontre domicile="auxerre" exterieur="lille" scored="3" scoree="0" />
+		<rencontre domicile="guingamp" exterieur="monaco" scored="1" scoree="2" />
+		<rencontre domicile="lemans" exterieur="bordeaux" scored="0" scoree="0" />
+		<rencontre domicile="lens" exterieur="metz" scored="0" scoree="2" />
+		<rencontre domicile="marseille" exterieur="bastia" scored="3" scoree="1" />
+		<rencontre domicile="nantes" exterieur="rennes" scored="1" scoree="0" />
+		<rencontre domicile="nice" exterieur="strasbourg" scored="0" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="parissg" scored="0" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="montpellier" scored="2" scoree="2" />
+	</journee>
+	<journee numero="10" date="18/10/2003">
+		<rencontre domicile="bastia" exterieur="lens" scored="3" scoree="1" />
+		<rencontre domicile="bordeaux" exterieur="toulouse" scored="1" scoree="2" />
+		<rencontre domicile="lille" exterieur="ajaccio" scored="0" scoree="0" />
+		<rencontre domicile="lyon" exterieur="sochaux" scored="1" scoree="1" />
+		<rencontre domicile="metz" exterieur="nantes" scored="1" scoree="3" />
+		<rencontre domicile="monaco" exterieur="auxerre" scored="1" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="guingamp" scored="2" scoree="0" />
+		<rencontre domicile="parissg" exterieur="lemans" scored="5" scoree="1" />
+		<rencontre domicile="rennes" exterieur="nice" scored="0" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="marseille" scored="4" scoree="1" />
+	</journee>
+	<journee numero="11" date="25/10/2003">
+		<rencontre domicile="ajaccio" exterieur="parissg" scored="0" scoree="0" />
+		<rencontre domicile="auxerre" exterieur="montpellier" scored="0" scoree="1" />
+		<rencontre domicile="guingamp" exterieur="toulouse" scored="1" scoree="0" />
+		<rencontre domicile="lemans" exterieur="bastia" scored="1" scoree="1" />
+		<rencontre domicile="lens" exterieur="lille" scored="2" scoree="1" />
+		<rencontre domicile="marseille" exterieur="rennes" scored="2" scoree="0" />
+		<rencontre domicile="nantes" exterieur="lyon" scored="0" scoree="1" />
+		<rencontre domicile="nice" exterieur="bordeaux" scored="0" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="monaco" scored="1" scoree="1" />
+		<rencontre domicile="strasbourg" exterieur="metz" scored="0" scoree="2" />
+	</journee>
+	<journee numero="12" date="01/11/2003">
+		<rencontre domicile="bastia" exterieur="ajaccio" scored="1" scoree="1" />
+		<rencontre domicile="bordeaux" exterieur="marseille" scored="1" scoree="0" />
+		<rencontre domicile="lille" exterieur="guingamp" scored="1" scoree="3" />
+		<rencontre domicile="lyon" exterieur="nice" scored="5" scoree="0" />
+		<rencontre domicile="metz" exterieur="sochaux" scored="0" scoree="1" />
+		<rencontre domicile="monaco" exterieur="lemans" scored="4" scoree="2" />
+		<rencontre domicile="montpellier" exterieur="nantes" scored="4" scoree="1" />
+		<rencontre domicile="parissg" exterieur="lens" scored="0" scoree="1" />
+		<rencontre domicile="rennes" exterieur="strasbourg" scored="1" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="auxerre" scored="0" scoree="3" />
+	</journee>
+	<journee numero="13" date="08/11/2003">
+		<rencontre domicile="ajaccio" exterieur="monaco" scored="0" scoree="1" />
+		<rencontre domicile="auxerre" exterieur="guingamp" scored="3" scoree="0" />
+		<rencontre domicile="lemans" exterieur="metz" scored="2" scoree="0" />
+		<rencontre domicile="lens" exterieur="montpellier" scored="3" scoree="2" />
+		<rencontre domicile="marseille" exterieur="lyon" scored="1" scoree="4" />
+		<rencontre domicile="nantes" exterieur="parissg" scored="0" scoree="1" />
+		<rencontre domicile="nice" exterieur="bastia" scored="2" scoree="0" />
+		<rencontre domicile="rennes" exterieur="lille" scored="2" scoree="2" />
+		<rencontre domicile="sochaux" exterieur="toulouse" scored="3" scoree="1" />
+		<rencontre domicile="strasbourg" exterieur="bordeaux" scored="1" scoree="1" />
+	</journee>
+	<journee numero="14" date="22/11/2003">
+		<rencontre domicile="bastia" exterieur="nantes" scored="1" scoree="3" />
+		<rencontre domicile="bordeaux" exterieur="rennes" scored="2" scoree="1" />
+		<rencontre domicile="guingamp" exterieur="sochaux" scored="1" scoree="2" />
+		<rencontre domicile="lille" exterieur="marseille" scored="0" scoree="2" />
+		<rencontre domicile="lyon" exterieur="strasbourg" scored="1" scoree="0" />
+		<rencontre domicile="metz" exterieur="auxerre" scored="0" scoree="2" />
+		<rencontre domicile="monaco" exterieur="lens" scored="2" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="ajaccio" scored="3" scoree="1" />
+		<rencontre domicile="parissg" exterieur="nice" scored="0" scoree="0" />
+		<rencontre domicile="toulouse" exterieur="lemans" scored="1" scoree="1" />
+	</journee>
+	<journee numero="15" date="29/11/2003">
+		<rencontre domicile="ajaccio" exterieur="toulouse" scored="2" scoree="1" />
+		<rencontre domicile="bordeaux" exterieur="bastia" scored="1" scoree="1" />
+		<rencontre domicile="lemans" exterieur="montpellier" scored="4" scoree="0" />
+		<rencontre domicile="lens" exterieur="guingamp" scored="2" scoree="1" />
+		<rencontre domicile="marseille" exterieur="parissg" scored="0" scoree="1" />
+		<rencontre domicile="nantes" exterieur="monaco" scored="0" scoree="1" />
+		<rencontre domicile="nice" exterieur="metz" scored="1" scoree="1" />
+		<rencontre domicile="rennes" exterieur="lyon" scored="3" scoree="1" />
+		<rencontre domicile="sochaux" exterieur="auxerre" scored="3" scoree="2" />
+		<rencontre domicile="strasbourg" exterieur="lille" scored="2" scoree="2" />
+	</journee>
+	<journee numero="16" date="03/12/2003">
+		<rencontre domicile="auxerre" exterieur="lemans" scored="1" scoree="0" />
+		<rencontre domicile="bastia" exterieur="rennes" scored="3" scoree="2" />
+		<rencontre domicile="guingamp" exterieur="ajaccio" scored="2" scoree="0" />
+		<rencontre domicile="lille" exterieur="nantes" scored="2" scoree="0" />
+		<rencontre domicile="lyon" exterieur="bordeaux" scored="3" scoree="0" />
+		<rencontre domicile="metz" exterieur="marseille" scored="1" scoree="1" />
+		<rencontre domicile="monaco" exterieur="nice" scored="1" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="sochaux" scored="1" scoree="3" />
+		<rencontre domicile="parissg" exterieur="strasbourg" scored="3" scoree="2" />
+		<rencontre domicile="toulouse" exterieur="lens" scored="1" scoree="2" />
+	</journee>
+	<journee numero="17" date="06/12/2003">
+		<rencontre domicile="ajaccio" exterieur="auxerre" scored="1" scoree="2" />
+		<rencontre domicile="bordeaux" exterieur="lille" scored="2" scoree="1" />
+		<rencontre domicile="lemans" exterieur="guingamp" scored="2" scoree="0" />
+		<rencontre domicile="lens" exterieur="sochaux" scored="0" scoree="3" />
+		<rencontre domicile="lyon" exterieur="metz" scored="2" scoree="1" />
+		<rencontre domicile="marseille" exterieur="monaco" scored="1" scoree="2" />
+		<rencontre domicile="nantes" exterieur="toulouse" scored="1" scoree="1" />
+		<rencontre domicile="nice" exterieur="montpellier" scored="2" scoree="1" />
+		<rencontre domicile="rennes" exterieur="parissg" scored="1" scoree="1" />
+		<rencontre domicile="strasbourg" exterieur="bastia" scored="4" scoree="2" />
+	</journee>
+	<journee numero="18" date="13/12/2003">
+		<rencontre domicile="auxerre" exterieur="lens" scored="2" scoree="0" />
+		<rencontre domicile="bastia" exterieur="lyon" scored="0" scoree="0" />
+		<rencontre domicile="guingamp" exterieur="nantes" scored="1" scoree="1" />
+		<rencontre domicile="lille" exterieur="lemans" scored="1" scoree="1" />
+		<rencontre domicile="metz" exterieur="rennes" scored="1" scoree="1" />
+		<rencontre domicile="monaco" exterieur="strasbourg" scored="2" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="marseille" scored="0" scoree="1" />
+		<rencontre domicile="parissg" exterieur="bordeaux" scored="2" scoree="1" />
+		<rencontre domicile="sochaux" exterieur="ajaccio" scored="2" scoree="0" />
+		<rencontre domicile="toulouse" exterieur="nice" scored="1" scoree="1" />
+	</journee>
+	<journee numero="19" date="20/12/2003">
+		<rencontre domicile="ajaccio" exterieur="lens" scored="2" scoree="0" />
+		<rencontre domicile="bastia" exterieur="lille" scored="0" scoree="2" />
+		<rencontre domicile="bordeaux" exterieur="metz" scored="2" scoree="0" />
+		<rencontre domicile="lemans" exterieur="sochaux" scored="2" scoree="2" />
+		<rencontre domicile="lyon" exterieur="parissg" scored="1" scoree="1" />
+		<rencontre domicile="marseille" exterieur="toulouse" scored="1" scoree="0" />
+		<rencontre domicile="nantes" exterieur="auxerre" scored="1" scoree="0" />
+		<rencontre domicile="nice" exterieur="guingamp" scored="2" scoree="0" />
+		<rencontre domicile="rennes" exterieur="monaco" scored="1" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="montpellier" scored="4" scoree="2" />
+	</journee>
+	<journee numero="20" date="10/01/2004">
+		<rencontre domicile="ajaccio" exterieur="lemans" scored="2" scoree="0" />
+		<rencontre domicile="auxerre" exterieur="marseille" scored="2" scoree="0" />
+		<rencontre domicile="guingamp" exterieur="strasbourg" scored="3" scoree="2" />
+		<rencontre domicile="lens" exterieur="nantes" scored="0" scoree="0" />
+		<rencontre domicile="metz" exterieur="bastia" scored="1" scoree="0" />
+		<rencontre domicile="monaco" exterieur="lyon" scored="3" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="bordeaux" scored="1" scoree="2" />
+		<rencontre domicile="parissg" exterieur="lille" scored="1" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="nice" scored="0" scoree="0" />
+		<rencontre domicile="toulouse" exterieur="rennes" scored="2" scoree="0" />
+	</journee>
+	<journee numero="21" date="17/01/2004">
+		<rencontre domicile="bastia" exterieur="monaco" scored="0" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="guingamp" scored="2" scoree="0" />
+		<rencontre domicile="lille" exterieur="toulouse" scored="0" scoree="1" />
+		<rencontre domicile="lyon" exterieur="montpellier" scored="3" scoree="0" />
+		<rencontre domicile="marseille" exterieur="lens" scored="3" scoree="2" />
+		<rencontre domicile="nantes" exterieur="ajaccio" scored="4" scoree="0" />
+		<rencontre domicile="nice" exterieur="lemans" scored="0" scoree="1" />
+		<rencontre domicile="parissg" exterieur="metz" scored="0" scoree="0" />
+		<rencontre domicile="rennes" exterieur="sochaux" scored="4" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="auxerre" scored="0" scoree="2" />
+	</journee>
+	<journee numero="22" date="31/01/2004">
+		<rencontre domicile="ajaccio" exterieur="nice" scored="1" scoree="1" />
+		<rencontre domicile="auxerre" exterieur="bordeaux" scored="5" scoree="0" />
+		<rencontre domicile="guingamp" exterieur="rennes" scored="0" scoree="2" />
+		<rencontre domicile="lemans" exterieur="nantes" scored="0" scoree="1" />
+		<rencontre domicile="lens" exterieur="strasbourg" scored="2" scoree="1" />
+		<rencontre domicile="metz" exterieur="lille" scored="0" scoree="1" />
+		<rencontre domicile="monaco" exterieur="parissg" scored="1" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="bastia" scored="1" scoree="1" />
+		<rencontre domicile="sochaux" exterieur="marseille" scored="2" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="lyon" scored="0" scoree="1" />
+	</journee>
+	<journee numero="23" date="07/02/2004">
+		<rencontre domicile="bastia" exterieur="toulouse" scored="1" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="nantes" scored="2" scoree="0" />
+		<rencontre domicile="lille" exterieur="sochaux" scored="2" scoree="0" />
+		<rencontre domicile="lyon" exterieur="guingamp" scored="0" scoree="1" />
+		<rencontre domicile="marseille" exterieur="ajaccio" scored="2" scoree="1" />
+		<rencontre domicile="metz" exterieur="monaco" scored="0" scoree="2" />
+		<rencontre domicile="nice" exterieur="lens" scored="4" scoree="0" />
+		<rencontre domicile="parissg" exterieur="montpellier" scored="6" scoree="1" />
+		<rencontre domicile="rennes" exterieur="auxerre" scored="0" scoree="2" />
+		<rencontre domicile="strasbourg" exterieur="lemans" scored="3" scoree="0" />
+	</journee>
+	<journee numero="24" date="14/02/2004">
+		<rencontre domicile="ajaccio" exterieur="strasbourg" scored="0" scoree="0" />
+		<rencontre domicile="auxerre" exterieur="lyon" scored="1" scoree="2" />
+		<rencontre domicile="guingamp" exterieur="bastia" scored="1" scoree="0" />
+		<rencontre domicile="lemans" exterieur="marseille" scored="0" scoree="0" />
+		<rencontre domicile="lens" exterieur="rennes" scored="2" scoree="1" />
+		<rencontre domicile="monaco" exterieur="lille" scored="0" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="metz" scored="0" scoree="1" />
+		<rencontre domicile="nantes" exterieur="nice" scored="3" scoree="1" />
+		<rencontre domicile="sochaux" exterieur="bordeaux" scored="1" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="parissg" scored="0" scoree="1" />
+	</journee>
+	<journee numero="25" date="21/02/2004">
+		<rencontre domicile="bastia" exterieur="auxerre" scored="0" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="lens" scored="0" scoree="0" />
+		<rencontre domicile="lille" exterieur="nice" scored="1" scoree="2" />
+		<rencontre domicile="lyon" exterieur="lemans" scored="2" scoree="0" />
+		<rencontre domicile="marseille" exterieur="nantes" scored="1" scoree="1" />
+		<rencontre domicile="metz" exterieur="toulouse" scored="0" scoree="2" />
+		<rencontre domicile="monaco" exterieur="montpellier" scored="4" scoree="0" />
+		<rencontre domicile="parissg" exterieur="guingamp" scored="2" scoree="0" />
+		<rencontre domicile="rennes" exterieur="ajaccio" scored="4" scoree="1" />
+		<rencontre domicile="strasbourg" exterieur="sochaux" scored="0" scoree="2" />
+	</journee>
+	<journee numero="26" date="28/02/2004">
+		<rencontre domicile="ajaccio" exterieur="bordeaux" scored="1" scoree="0" />
+		<rencontre domicile="auxerre" exterieur="parissg" scored="1" scoree="1" />
+		<rencontre domicile="guingamp" exterieur="metz" scored="1" scoree="1" />
+		<rencontre domicile="lemans" exterieur="rennes" scored="2" scoree="2" />
+		<rencontre domicile="lens" exterieur="lyon" scored="1" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="lille" scored="0" scoree="2" />
+		<rencontre domicile="nantes" exterieur="strasbourg" scored="1" scoree="1" />
+		<rencontre domicile="nice" exterieur="marseille" scored="0" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="bastia" scored="2" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="monaco" scored="1" scoree="1" />
+	</journee>
+	<journee numero="27" date="06/03/2004">
+		<rencontre domicile="bastia" exterieur="marseille" scored="4" scoree="1" />
+		<rencontre domicile="bordeaux" exterieur="lemans" scored="2" scoree="0" />
+		<rencontre domicile="lille" exterieur="auxerre" scored="1" scoree="0" />
+		<rencontre domicile="lyon" exterieur="ajaccio" scored="4" scoree="0" />
+		<rencontre domicile="metz" exterieur="lens" scored="0" scoree="2" />
+		<rencontre domicile="monaco" exterieur="guingamp" scored="3" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="toulouse" scored="0" scoree="1" />
+		<rencontre domicile="parissg" exterieur="sochaux" scored="1" scoree="1" />
+		<rencontre domicile="rennes" exterieur="nantes" scored="0" scoree="3" />
+		<rencontre domicile="strasbourg" exterieur="nice" scored="2" scoree="2" />
+	</journee>
+	<journee numero="28" date="13/03/2004">
+		<rencontre domicile="ajaccio" exterieur="lille" scored="0" scoree="3" />
+		<rencontre domicile="auxerre" exterieur="monaco" scored="0" scoree="0" />
+		<rencontre domicile="guingamp" exterieur="montpellier" scored="4" scoree="3" />
+		<rencontre domicile="lemans" exterieur="parissg" scored="0" scoree="1" />
+		<rencontre domicile="lens" exterieur="bastia" scored="0" scoree="0" />
+		<rencontre domicile="marseille" exterieur="strasbourg" scored="4" scoree="0" />
+		<rencontre domicile="nantes" exterieur="metz" scored="2" scoree="2" />
+		<rencontre domicile="nice" exterieur="rennes" scored="3" scoree="1" />
+		<rencontre domicile="sochaux" exterieur="lyon" scored="1" scoree="2" />
+		<rencontre domicile="toulouse" exterieur="bordeaux" scored="1" scoree="0" />
+	</journee>
+	<journee numero="29" date="20/03/2004">
+		<rencontre domicile="bastia" exterieur="lemans" scored="0" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="nice" scored="1" scoree="1" />
+		<rencontre domicile="lille" exterieur="lens" scored="1" scoree="1" />
+		<rencontre domicile="lyon" exterieur="nantes" scored="1" scoree="0" />
+		<rencontre domicile="metz" exterieur="strasbourg" scored="1" scoree="0" />
+		<rencontre domicile="monaco" exterieur="sochaux" scored="1" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="auxerre" scored="1" scoree="0" />
+		<rencontre domicile="parissg" exterieur="ajaccio" scored="1" scoree="0" />
+		<rencontre domicile="rennes" exterieur="marseille" scored="4" scoree="3" />
+		<rencontre domicile="toulouse" exterieur="guingamp" scored="0" scoree="0" />
+	</journee>
+	<journee numero="30" date="27/03/2004">
+		<rencontre domicile="ajaccio" exterieur="bastia" scored="1" scoree="0" />
+		<rencontre domicile="auxerre" exterieur="toulouse" scored="3" scoree="2" />
+		<rencontre domicile="guingamp" exterieur="lille" scored="2" scoree="1" />
+		<rencontre domicile="lemans" exterieur="monaco" scored="0" scoree="1" />
+		<rencontre domicile="lens" exterieur="parissg" scored="1" scoree="0" />
+		<rencontre domicile="marseille" exterieur="bordeaux" scored="1" scoree="1" />
+		<rencontre domicile="nantes" exterieur="montpellier" scored="3" scoree="2" />
+		<rencontre domicile="nice" exterieur="lyon" scored="0" scoree="1" />
+		<rencontre domicile="sochaux" exterieur="metz" scored="2" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="rennes" scored="0" scoree="3" />
+	</journee>
+	<journee numero="31" date="03/04/2004">
+		<rencontre domicile="bastia" exterieur="nice" scored="2" scoree="1" />
+		<rencontre domicile="bordeaux" exterieur="strasbourg" scored="1" scoree="1" />
+		<rencontre domicile="guingamp" exterieur="auxerre" scored="2" scoree="2" />
+		<rencontre domicile="lille" exterieur="rennes" scored="1" scoree="0" />
+		<rencontre domicile="lyon" exterieur="marseille" scored="1" scoree="2" />
+		<rencontre domicile="metz" exterieur="lemans" scored="5" scoree="0" />
+		<rencontre domicile="monaco" exterieur="ajaccio" scored="3" scoree="3" />
+		<rencontre domicile="montpellier" exterieur="lens" scored="1" scoree="0" />
+		<rencontre domicile="parissg" exterieur="nantes" scored="3" scoree="2" />
+		<rencontre domicile="toulouse" exterieur="sochaux" scored="0" scoree="0" />
+	</journee>
+	<journee numero="32" date="10/04/2004">
+		<rencontre domicile="ajaccio" exterieur="montpellier" scored="0" scoree="0" />
+		<rencontre domicile="auxerre" exterieur="metz" scored="2" scoree="1" />
+		<rencontre domicile="lemans" exterieur="toulouse" scored="2" scoree="1" />
+		<rencontre domicile="lens" exterieur="monaco" scored="0" scoree="0" />
+		<rencontre domicile="marseille" exterieur="lille" scored="2" scoree="1" />
+		<rencontre domicile="nantes" exterieur="bastia" scored="1" scoree="1" />
+		<rencontre domicile="nice" exterieur="parissg" scored="1" scoree="2" />
+		<rencontre domicile="rennes" exterieur="bordeaux" scored="3" scoree="1" />
+		<rencontre domicile="sochaux" exterieur="guingamp" scored="2" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="lyon" scored="0" scoree="1" />
+	</journee>
+	<journee numero="33" date="24/04/2004">
+		<rencontre domicile="auxerre" exterieur="sochaux" scored="2" scoree="1" />
+		<rencontre domicile="bastia" exterieur="bordeaux" scored="0" scoree="2" />
+		<rencontre domicile="guingamp" exterieur="lens" scored="1" scoree="0" />
+		<rencontre domicile="lille" exterieur="strasbourg" scored="0" scoree="1" />
+		<rencontre domicile="lyon" exterieur="rennes" scored="3" scoree="0" />
+		<rencontre domicile="metz" exterieur="nice" scored="1" scoree="0" />
+		<rencontre domicile="monaco" exterieur="nantes" scored="0" scoree="1" />
+		<rencontre domicile="montpellier" exterieur="lemans" scored="0" scoree="3" />
+		<rencontre domicile="parissg" exterieur="marseille" scored="2" scoree="1" />
+		<rencontre domicile="toulouse" exterieur="ajaccio" scored="3" scoree="1" />
+	</journee>
+	<journee numero="34" date="01/05/2004">
+		<rencontre domicile="ajaccio" exterieur="guingamp" scored="0" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="lyon" scored="1" scoree="1" />
+		<rencontre domicile="lemans" exterieur="auxerre" scored="2" scoree="1" />
+		<rencontre domicile="lens" exterieur="toulouse" scored="1" scoree="1" />
+		<rencontre domicile="marseille" exterieur="metz" scored="0" scoree="1" />
+		<rencontre domicile="nantes" exterieur="lille" scored="2" scoree="0" />
+		<rencontre domicile="nice" exterieur="monaco" scored="1" scoree="2" />
+		<rencontre domicile="rennes" exterieur="bastia" scored="4" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="montpellier" scored="3" scoree="1" />
+		<rencontre domicile="strasbourg" exterieur="parissg" scored="0" scoree="0" />
+	</journee>
+	<journee numero="35" date="08/05/2004">
+		<rencontre domicile="auxerre" exterieur="ajaccio" scored="1" scoree="1" />
+		<rencontre domicile="bastia" exterieur="strasbourg" scored="0" scoree="0" />
+		<rencontre domicile="guingamp" exterieur="lemans" scored="2" scoree="4" />
+		<rencontre domicile="lille" exterieur="bordeaux" scored="2" scoree="1" />
+		<rencontre domicile="metz" exterieur="lyon" scored="1" scoree="2" />
+		<rencontre domicile="monaco" exterieur="marseille" scored="1" scoree="0" />
+		<rencontre domicile="montpellier" exterieur="nice" scored="2" scoree="2" />
+		<rencontre domicile="parissg" exterieur="rennes" scored="1" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="lens" scored="0" scoree="3" />
+		<rencontre domicile="toulouse" exterieur="nantes" scored="0" scoree="1" />
+	</journee>
+	<journee numero="36" date="12/05/2004">
+		<rencontre domicile="ajaccio" exterieur="sochaux" scored="1" scoree="0" />
+		<rencontre domicile="bordeaux" exterieur="parissg" scored="3" scoree="0" />
+		<rencontre domicile="lemans" exterieur="lille" scored="1" scoree="1" />
+		<rencontre domicile="lens" exterieur="auxerre" scored="1" scoree="3" />
+		<rencontre domicile="lyon" exterieur="bastia" scored="1" scoree="0" />
+		<rencontre domicile="marseille" exterieur="montpellier" scored="1" scoree="1" />
+		<rencontre domicile="nantes" exterieur="guingamp" scored="0" scoree="0" />
+		<rencontre domicile="nice" exterieur="toulouse" scored="1" scoree="1" />
+		<rencontre domicile="rennes" exterieur="metz" scored="0" scoree="0" />
+		<rencontre domicile="strasbourg" exterieur="monaco" scored="0" scoree="0" />
+	</journee>
+	<journee numero="37" date="15/05/2004">
+		<rencontre domicile="auxerre" exterieur="nantes" scored="2" scoree="0" />
+		<rencontre domicile="guingamp" exterieur="nice" scored="1" scoree="2" />
+		<rencontre domicile="lens" exterieur="ajaccio" scored="2" scoree="0" />
+		<rencontre domicile="lille" exterieur="bastia" scored="2" scoree="0" />
+		<rencontre domicile="metz" exterieur="bordeaux" scored="3" scoree="1" />
+		<rencontre domicile="monaco" exterieur="rennes" scored="1" scoree="4" />
+		<rencontre domicile="montpellier" exterieur="strasbourg" scored="1" scoree="2" />
+		<rencontre domicile="parissg" exterieur="lyon" scored="1" scoree="0" />
+		<rencontre domicile="sochaux" exterieur="lemans" scored="3" scoree="0" />
+		<rencontre domicile="toulouse" exterieur="marseille" scored="2" scoree="1" />
+	</journee>
+	<journee numero="38" date="23/05/2004">
+		<rencontre domicile="ajaccio" exterieur="metz" scored="-" scoree="-" />
+		<rencontre domicile="bastia" exterieur="parissg" scored="-" scoree="-" />
+		<rencontre domicile="bordeaux" exterieur="monaco" scored="-" scoree="-" />
+		<rencontre domicile="lemans" exterieur="lens" scored="-" scoree="-" />
+		<rencontre domicile="lyon" exterieur="lille" scored="-" scoree="-" />
+		<rencontre domicile="marseille" exterieur="guingamp" scored="-" scoree="-" />
+		<rencontre domicile="nantes" exterieur="sochaux" scored="-" scoree="-" />
+		<rencontre domicile="nice" exterieur="auxerre" scored="-" scoree="-" />
+		<rencontre domicile="rennes" exterieur="montpellier" scored="-" scoree="-" />
+		<rencontre domicile="strasbourg" exterieur="toulouse" scored="-" scoree="-" />
+	</journee>
+</championnat>
+
