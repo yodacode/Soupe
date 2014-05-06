@@ -44,7 +44,7 @@ $(function () {
 		},
 		getTowns: function (countryId, callback) {
 			$.ajax({
-				url: 'http://rest.dev/app/get-towns.php?country_id=' + countryId,
+				url: 'http://rest.dev/app/ajax/get-towns.php?country_id=' + countryId,
 				type: 'GET',
 				dataType: "xml",
 				complete: function (data) {
@@ -55,7 +55,7 @@ $(function () {
 		},
 		getCountries: function (callback) {
 			$.ajax({
-				url: 'http://rest.dev/app/get-countries.php',
+				url: 'http://rest.dev/app/ajax/get-countries.php',
 				type: 'GET',
 				dataType: "xml",
 				complete: function (data) {
