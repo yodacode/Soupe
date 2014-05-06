@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<comments>
+	<comment>
+		<author>Michel dupont</author>
+		<content>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		</content>
+		<rate>4</rate>
+		<place_id>1</place_id>
+	</comment>
+
+	<comment>
+		<author>Patoche la brioches</author>
+		<content>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		</content>
+		<rate>3</rate>
+		<place_id>1</place_id>
+	</comment>
+
+	<comment>
+		<author>Rene la taupe</author>
+		<content>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		</content>
+		<rate>7</rate>
+		<place_id>1</place_id>
+	</comment>
+
+	<comment>
+		<author>Jean love</author>
+		<content>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		</content>
+		<rate>8</rate>
+		<place_id>1</place_id>
+	</comment>
+
+	<comment>
+		<author>Michel Marie</author>
+		<content>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		</content>
+		<rate>3</rate>
+		<place_id>1</place_id>
+	</comment>
+</comments>
+
