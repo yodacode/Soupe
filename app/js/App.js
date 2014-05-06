@@ -11,16 +11,25 @@ $(function () {
 		build: function () {
 			var that = this;
 			this.UI.selectTwons = $('#townsSelect');
-			this.UI.selectCountries = $('#countriesSelect');			
+			this.UI.selectCountries = $('#countriesSelect');
+			this.UI.selectAddPlace = $('#selectAddPlace');		
 
 			this.getCountries(function (xml) {
-
 				var option = $('<option>').appendTo(that.UI.selectCountries);
 				xml.find('item').each(function () {
 					var option = $('<option>')
 						.attr({value: $(this).find('id').text()})
 						.text($(this).find('name').text())
 						.appendTo(that.UI.selectCountries);
+				});
+			});
+
+			this.getTowns('', function (xml) {				
+				xml.find('item').each(function () {
+					var option = $('<option>')
+						.attr({value: $(this).find('id').text()})
+						.text($(this).find('name').text())
+						.appendTo(that.UI.selectAddPlace);
 				});
 			});
 		},
@@ -65,6 +74,7 @@ $(function () {
 		}
 	};
 	App.Seach.init();
+
 
 
 

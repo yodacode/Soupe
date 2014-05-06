@@ -49,7 +49,7 @@
 			if($this->get_request_method() != "GET"){
 				$this->response('',406);
 			}
-
+			
 			$sql = sprintf('SELECT * FROM place %s %s',
                !empty($this->_request['id']) ? 'WHERE id = :id' : null,
                !empty($this->_request['town_id']) ? 'WHERE town_id = :town_id' : null);

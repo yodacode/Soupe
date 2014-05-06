@@ -20,7 +20,7 @@
 	  		<body>
 
 	  		<div class="container">
-	  			<h1>SOAP REST</h1>
+	  			<h1><a href="/app">SOAP REST</a></h1>
     			<xsl:copy-of select="$content"/>
     		</div>
 
@@ -57,13 +57,8 @@
 					            	  </div>
 					            	  <div class="form-group">					            	  	
 					            	  	
-					            	  		<select name="town_id" class="form-control">
-					            	  		  <option value="1">1</option>					            	  		  
-					            	  		  <option value="1">Marseille</option>					            	  		  
-					            	  		  <option value="1">Marseille</option>					            	  		  
-					            	  		  <option value="1">Marseille</option>					            	  		  
-					            	  		  <option value="1">Marseille</option>					            	  		  
-					            	  		</select>
+				            	  		<select name="town_id" class="form-control" id="selectAddPlace">					  
+				            	  		</select>
 					            	  	
 					            	  </div>
 					          </div>

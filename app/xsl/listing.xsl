@@ -16,7 +16,7 @@
 	    					<div class="form-group">
 	    						<label class="control-label col-sm-3">Pays</label>
 	    						<div class="col-sm-9">
-	    							<select name="country_id" class="form-control" id="countriesSelect"></select>
+	    							<select class="form-control" id="countriesSelect"></select>
 	    						</div>
 	    					</div>
 	    					<div class="form-group">
