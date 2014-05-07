@@ -1,11 +1,11 @@
 <?php
-	class curl {
+	class clientRest {
 
-		const URL_GET_PLACES = 'http://rest.dev/api/places/';
-		const URL_DELETE_PLACE = 'http://rest.dev/api/deletePlace/?id=';
-		const URL_ADD_PLACE = 'http://rest.dev/api/addPlace';
-		const URL_GET_TOWNS = 'http://rest.dev/api/towns';
-		const URL_GET_COUNTRIES = 'http://rest.dev/api/countries';
+		const URL_GET_PLACES = 'http://rest.dev/rest/server/places/';
+		const URL_DELETE_PLACE = 'http://rest.dev/rest/server/deletePlace/?id=';
+		const URL_ADD_PLACE = 'http://rest.dev/rest/server/addPlace';
+		const URL_GET_TOWNS = 'http://rest.dev/rest/server/towns';
+		const URL_GET_COUNTRIES = 'http://rest.dev/rest/server/countries';
 
 		public $_curl;
 

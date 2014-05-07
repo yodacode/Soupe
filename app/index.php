@@ -1,10 +1,10 @@
 <?php 	
-	require_once('../curl/curl.php');
+	require_once('../rest/client/client.php');
 	
 	var_dump($_GET);
 	
-	$curl = new curl();
-	$places = $curl->getPlaces($_GET);
+	$clientRest = new clientRest();
+	$places = $clientRest->getPlaces($_GET);
 
 	$xml = new SimpleXMLElement($places);
 	$xsl = new DOMDocument;

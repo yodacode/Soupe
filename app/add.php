@@ -1,9 +1,9 @@
 <?php 
-	require_once('../curl/curl.php');
+	require_once('../rest/client/client.php');
 
-	$curl = new curl();
+	$clientRest = new clientRest();
 
-	$curl->addPlace($_POST);	
+	$clientRest->addPlace($_POST);	
 	
 	header('Location: index.php');
  ?>

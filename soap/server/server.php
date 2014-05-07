@@ -1,10 +1,10 @@
 <?php 
-	require "lib/nusoap.php";	
+	require "../lib/nusoap.php";	
 
 	function getComments($place_id) {
 
 
-		$comments = new SimpleXMLElement('comments.xml', NULL, TRUE);
+		$comments = new SimpleXMLElement('../data/comments.xml', NULL, TRUE);
 		$result = array();
 		
 		foreach($comments->xpath('//comment[place_id="'.$place_id.'"]') as $comment) {				

@@ -1,8 +1,8 @@
 <?php 
-	require_once('../curl/curl.php');
+	require_once('../rest/client/client.php');
 
-	$curl = new curl();
-	$place = $curl->getPlaces(array('id' => $_GET['id']));
+	$clientRest = new clientRest();
+	$place = $clientRest->getPlaces(array('id' => $_GET['id']));
 
 	$xml = new SimpleXMLElement($place);
 	$xsl = new DOMDocument;

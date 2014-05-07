@@ -1,9 +1,9 @@
 <?php 
 	header("Content-type: text/xml; charset=utf-8");	
-	require_once('../../curl/curl.php');
+	require_once('../../rest/client/client.php');
 	
-	$curl = new curl();	
-	$towns = $curl->getCountries();
+	$clientRest = new clientRest();	
+	$towns = $clientRest->getCountries();
 
 	echo $towns;
  ?>

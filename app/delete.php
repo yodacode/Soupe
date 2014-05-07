@@ -1,8 +1,8 @@
 <?php
-	require_once('../curl/curl.php');
+	require_once('../rest/client/client.php');
 
-	$curl = new curl();
-	$place = $curl->deletePlace($_GET['id']);
+	$clientRest = new clientRest();
+	$place = $clientRest->deletePlace($_GET['id']);
 	header('Location: index.php');
 
  ?>
