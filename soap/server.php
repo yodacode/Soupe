@@ -1,10 +1,20 @@
 <?php 
 	require "lib/nusoap.php";	
 
-	function getAutocompleteContacts($email, $num, $token) {
+	function getComments($place_id) {
+
+
+		$comments = new SimpleXMLElement('comments.xml', NULL, TRUE);
 		$result = array();
-		$result[] = array( 'contact' => 'Chaos Captain', 'email' => 'choas@sdfusidfousdf.com');
-		$result[] = array( 'contact' => 'Joe Joe', 'email' => 'choas@sdf768sdf798s7df987.com');
+		
+		foreach($comments->xpath('//comment[place_id="'.$place_id.'"]') as $comment) {				
+			$result[] = array( 
+				'author' 	=> (string)$comment->author, 
+				'content' 	=> (string)$comment->content, 
+				'rate' 		=> (int)$comment->rate, 
+				'place_id' 	=> (int)$comment->place_id
+			);
+		}
 
 		return $result;
 	}
@@ -17,33 +27,35 @@
 
 	//Create a complex type
 	$server->wsdl->addComplexType(
-		'Contact',
+		'Comment',
 		'complexType',
 		'struct',
 		'all',
 		'',
 		array(
-			'contact' => array('name' => 'contact', 'type' => 'xsd:string'),
-			'email' => array('name' => 'email', 'type' => 'xsd:string'),
+			'author' => array('name' => 'author', 'type' => 'xsd:string'),
+			'content' => array('name' => 'content', 'type' => 'xsd:string'),
+			'rate' => array('name' => 'rate', 'type' => 'xsd:int'),
+			'place_id' => array('name' => 'place_id', 'type' => 'xsd:int'),
 		)
 	);
 
 	$server->wsdl->addComplexType(
-		'ContactArray',
+		'CommentArray',
 		'complexType',
 		'array',		
 		'',
 		array(),
 		array(
-		array('ref'=>'SOAP-ENC:arrayType','wsdl:arrayType'=>'tns:Contact[]')
+		array('ref'=>'SOAP-ENC:arrayType','wsdl:arrayType'=>'tns:Comment[]')
 		),
-		'tns:Contact'
+		'tns:Comment'
 	);
 
 
-	$server->register('getAutocompleteContacts',
-	array('email' => 'xsd:string', 'num' => 'xsd:int', 'token' => 'xsd:string'), // input parameters
-	array('return' => 'tns:ContactArray'),
+	$server->register('getComments',
+	array('place_id' => 'xsd:int'), // input parameters
+	array('return' => 'tns:CommentArray'),
 	'urn:soupe', // namespace
 	'urn:soupe',
 	'rpc', // style

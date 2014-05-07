@@ -11,6 +11,7 @@
 		// At this point, you know the call that follows will fail
 	}
 	
-	$result = $client->call('getAutocompleteContacts', array('email'=>'something@asdf97s9d8f7sdf.com', 'num'=>5, 'token'=>"asd123") );
+	$result = $client->call('getComments', array('place_id'=> 2));
+	echo "<pre>";
 	var_dump($result);
 ?>
