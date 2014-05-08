@@ -23,6 +23,27 @@
 			return $this->xml($result);
 		}
 
+		public function addComment($data){
+
+			$err = $this->_client->getError();
+			if ($err) {
+				// Display the error
+				echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+				// At this point, you know the call that follows will fail
+			}
+
+			$result = $this->_client->call('addComment', 
+				array(
+					'author' 	=> $data['author'], 
+					'content' 	=> $data['content'], 
+					'rate' 		=> $data['rate'], 
+					'place_id' 	=> $data['place_id']
+				)
+			);
+
+			return $result;
+		}
+
 		/*
 		 *	Encode array into JSON
 		*/

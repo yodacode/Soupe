@@ -18,6 +18,29 @@
 
 		return $result;
 	}
+
+	function addComment($author, $content, $rate, $place_id){
+		
+		$xml_str = file_get_contents('../data/comments.xml');
+		$xml = new SimpleXMLElement($xml_str);
+		$comments = $xml->xpath('//comments');
+		$comments = $comments [0];
+		$comment = $comments->addChild('comment');
+		$comment->addChild('author', $author);
+		$comment->addChild('content', $content);
+		$comment->addChild('rate', $rate);
+		$comment->addChild('place_id', $place_id);
+		file_put_contents('../data/comments.xml', $xml->asXML());
+
+		$result = array( 
+			'author' 	=> $author, 
+			'content' 	=> $content, 
+			'rate' 		=> $rate, 
+			'place_id' 	=> $place_id
+		);
+
+		return $result;		
+	}
 	
 	$HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';
 
@@ -56,6 +79,20 @@
 	$server->register('getComments',
 	array('place_id' => 'xsd:int'), // input parameters
 	array('return' => 'tns:CommentArray'),
+	'urn:soupe', // namespace
+	'urn:soupe',
+	'rpc', // style
+	'encoded', // use
+	'Fetch array of address book contacts for use in autocomplete');
+
+	$server->register('addComment',
+	array(
+		'author' => 'xsd:string',
+		'content' => 'xsd:string',
+		'rate' => 'xsd:int',
+		'place_id' => 'xsd:int'
+	), // input parameters
+	array('return' => 'tns:Comment'),
 	'urn:soupe', // namespace
 	'urn:soupe',
 	'rpc', // style

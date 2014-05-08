@@ -74,7 +74,7 @@ $(function () {
 			this.UI = {};
 
 			this.UI.container = $('#comments-container');
-			this.UI.thumb = this.UI.container.find('.item');
+			this.UI.thumb = this.UI.container.find('.item.comment');
 			this.status.currentPlaceId = $('#page').attr('data-place-id');
 			
 			this.build();
@@ -89,10 +89,9 @@ $(function () {
 		bind: function () {
 			this.UI.thumb.hide();
 		},
-		createThumb: function (items) {
-			
+		createThumb: function (items) {			
 			var that = this;
-			console.log(items.length);
+			
 			if (items.length > 0) {
 				items.each(function () {				
 					var thumb = that.UI.thumb.clone();
@@ -102,10 +101,6 @@ $(function () {
 					thumb.find('.rate').text($(this).find('rate').text());
 					that.UI.container.append(thumb);
 				});
-			} else {					
-				$('h3')
-					.text('Pas de commentaires...')
-					.appendTo(this.UI.container);
 			}
 			
 		},
