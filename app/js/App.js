@@ -67,6 +67,64 @@ $(function () {
 	};
 	App.Seach.init();
 
+	App.Comments = {
+		init: function () {
+			
+			this.status = {};
+			this.UI = {};
+
+			this.UI.container = $('#comments-container');
+			this.UI.thumb = this.UI.container.find('.item');
+			this.status.currentPlaceId = $('#page').attr('data-place-id');
+			
+			this.build();
+			this.bind();
+		},
+		build: function () {
+			var that = this;			
+			this.getComments(that.status.currentPlaceId, function (xml) {
+				that.createThumb(xml.find('item'));
+			});
+		},
+		bind: function () {
+			this.UI.thumb.hide();
+		},
+		createThumb: function (items) {
+			
+			var that = this;
+			console.log(items.length);
+			if (items.length > 0) {
+				items.each(function () {				
+					var thumb = that.UI.thumb.clone();
+					thumb.show();
+					thumb.find('.author').text($(this).find('author').text());
+					thumb.find('.content').text($(this).find('content').text());
+					thumb.find('.rate').text($(this).find('rate').text());
+					that.UI.container.append(thumb);
+				});
+			} else {					
+				$('h3')
+					.text('Pas de commentaires...')
+					.appendTo(this.UI.container);
+			}
+			
+		},
+		getComments: function (townId, callback) { 
+			
+			$.ajax({
+				url: 'http://rest.dev/app/ajax/get-comments.php?place_id=' + townId,
+				type: 'GET',
+				dataType: "xml",
+				complete: function (data) {
+					var xml = $(data.responseXML);
+					callback(xml);
+				}
+			});
+
+		}
+	};
+	App.Comments.init();
+
 
 
 

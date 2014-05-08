@@ -33,10 +33,10 @@
 		'all',
 		'',
 		array(
-			'author' => array('name' => 'author', 'type' => 'xsd:string'),
-			'content' => array('name' => 'content', 'type' => 'xsd:string'),
-			'rate' => array('name' => 'rate', 'type' => 'xsd:int'),
-			'place_id' => array('name' => 'place_id', 'type' => 'xsd:int'),
+			'author' 	=> array('name' => 'author', 'type' => 'xsd:string'),
+			'content' 	=> array('name' => 'content', 'type' => 'xsd:string'),
+			'rate' 		=> array('name' => 'rate', 'type' => 'xsd:int'),
+			'place_id' 	=> array('name' => 'place_id', 'type' => 'xsd:int'),
 		)
 	);
 
