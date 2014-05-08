@@ -69,31 +69,43 @@ $(function () {
 
 	App.Comments = {
 		init: function () {
-			
+
 			this.status = {};
 			this.UI = {};
 
 			this.UI.container = $('#comments-container');
+			this.UI.addCommentForm  = $('#add-comment');
+			this.UI.btnAddComment  = $('.btn-add-comment');
 			this.UI.thumb = this.UI.container.find('.item.comment');
 			this.status.currentPlaceId = $('#page').attr('data-place-id');
-			
+
 			this.build();
 			this.bind();
 		},
 		build: function () {
-			var that = this;			
+			var that = this;
 			this.getComments(that.status.currentPlaceId, function (xml) {
 				that.createThumb(xml.find('item'));
 			});
 		},
 		bind: function () {
-			this.UI.thumb.hide();
-		},
-		createThumb: function (items) {			
 			var that = this;
-			
+			this.UI.thumb.hide();
+			this.UI.btnAddComment.on('click', function () {
+				var data = {
+					author: 	$('#author').val(),
+					content: 	$('#content').val(),
+					rate: 		parseInt($('#rate').val()),
+					place_id: 	parseInt($('#place_id').val()),
+				};
+				that.addComment(data);
+			});
+		},
+		createThumb: function (items) {
+			var that = this;
+
 			if (items.length > 0) {
-				items.each(function () {				
+				items.each(function () {
 					var thumb = that.UI.thumb.clone();
 					thumb.show();
 					thumb.find('.author').text($(this).find('author').text());
@@ -102,10 +114,10 @@ $(function () {
 					that.UI.container.append(thumb);
 				});
 			}
-			
+
 		},
-		getComments: function (townId, callback) { 
-			
+		getComments: function (townId, callback) {
+
 			$.ajax({
 				url: 'http://rest.dev/app/ajax/get-comments.php?place_id=' + townId,
 				type: 'GET',
@@ -115,7 +127,17 @@ $(function () {
 					callback(xml);
 				}
 			});
-
+		},
+		addComment: function (data) {
+			
+			$.ajax({
+				url: 'http://rest.dev/app/ajax/add-comment.php',
+				type: 'POST',
+				data: data,				
+				complete: function (data) {
+					window.location.reload();
+				}
+			});
 		}
 	};
 	App.Comments.init();

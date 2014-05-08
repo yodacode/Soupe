@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <comments>
 	<comment>
 		<author>Michel dupont</author>
@@ -49,5 +49,5 @@
 		<rate>3</rate>
 		<place_id>2</place_id>
 	</comment>
-</comments>
-
+<comment><author>Micheline</author><content>sdfjsflksjflksjflksdfj</content><rate>12</rate><place_id>3</place_id></comment><comment><author>bonjour</author><content>adasdasads
+</content><rate>12</rate><place_id>3</place_id></comment><comment><author>Benjamin</author><content>bonjour je suis un poupee</content><rate>12</rate><place_id>2</place_id></comment></comments>

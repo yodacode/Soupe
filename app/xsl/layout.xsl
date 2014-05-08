@@ -15,6 +15,9 @@
 			      .overflow {
 			        overflow: hidden;
 			      }
+			      .space {
+			        margin: 30px 0px 30px 0px;
+			      }
 			    </style>
 	  		</head>
 	  		<body>
