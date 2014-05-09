@@ -18,6 +18,10 @@
 			      .space {
 			        margin: 30px 0px 30px 0px;
 			      }
+			      #map-canvas { 
+			      	width: 100%;
+			      	height: 150px;
+			      }
 			    </style>
 	  		</head>
 	  		<body>
@@ -26,7 +30,6 @@
 	  			<h1><a href="/app">SOAP REST</a></h1>
     			<xsl:copy-of select="$content"/>
     		</div>
-
 
 	  		<!-- Modal -->
 			    <div class="modal fade" id="addPlace" tabindex="-1" role="dialog" aria-labelledby="addPlace" aria-hidden="true">
@@ -80,6 +83,11 @@
 			    <!-- Include all compiled plugins (below), or include individual files as needed -->
 			    <script src="../app/bootstrap/js/bootstrap.min.js"></script>
 			    <script type="text/javascript" src="../app/js/App.js"></script>
+			    <script type="text/javascript" >
+				    <xsl:attribute name="src">
+				    	<xsl:text disable-output-escaping="yes">https://maps.googleapis.com/maps/api/js?key=AIzaSyAE8pE3z68A_NLUW7PP4VffUaPFselcd7k<![CDATA[&]]>sensor=true</xsl:text>
+				    </xsl:attribute>
+			    </script>
 
 		    </body>
   		</html>

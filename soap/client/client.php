@@ -31,7 +31,7 @@
 				echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
 				// At this point, you know the call that follows will fail
 			}
-
+			
 			$result = $this->_client->call('addComment', 
 				array(
 					'author' 	=> $data['author'], 

@@ -22,6 +22,16 @@
 		    				<div class="col-md-12 space">
 		    					<p><xsl:value-of select="description"/></p>
 		    				</div>
+		    				<div class="col-md-12 space">
+		    					<div id="map-canvas">
+		    						<xsl:attribute name="data-lat">
+		    							<xsl:value-of select="latitude"/>
+		    						</xsl:attribute>
+		    						<xsl:attribute name="data-lng">
+		    							<xsl:value-of select="longitude"/>
+		    						</xsl:attribute>
+		    					</div>
+		    				</div>
 
 		    			</div>
 		    			<div class="col-md-9" id="comments-container">

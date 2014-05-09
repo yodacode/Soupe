@@ -20,7 +20,7 @@
 	}
 
 	function addComment($author, $content, $rate, $place_id){
-		
+		//chmod("../data/comments.xml", 777);		x
 		$xml_str = file_get_contents('../data/comments.xml');
 		$xml = new SimpleXMLElement($xml_str);
 		$comments = $xml->xpath('//comments');

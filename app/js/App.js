@@ -142,6 +142,36 @@ $(function () {
 	};
 	App.Comments.init();
 
+	App.Maps = {
+		init: function () {
+			this.container = $("#map-canvas");		
+			var lat = this.container.attr('data-lat'),
+				lng = this.container.attr('data-lng');
+
+			this.build(lat, lng);
+		},
+		build: function (lat, lng) {
+			var latlng, map, mapOptions, marker;
+			
+			latlng = new google.maps.LatLng(lat, lng);
+			
+			mapOptions = {
+			  zoom: 8,
+			  center: latlng
+			};
+
+			map = new google.maps.Map(this.container.get(0), mapOptions);
+
+			marker = new google.maps.Marker({
+			    position: latlng,
+			    map: map,
+			    title: 'Place'
+			});
+		}
+
+	};
+	App.Maps.init();
+
 
 
 
