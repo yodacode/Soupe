@@ -1,4 +1,41 @@
-Soupe
-=====
+# SOAP & REST 
+## Installation
+### 1) Create a virtualhost
+````
+rest.dev
+````
+### 2) Edit config.php
+Set the constant fullhost, according to your virtualhost
 
-Soap &amp; Rest
+````
+define("FULL_HOST", 'http://rest.dev/');
+````
+
+Configure your Database
+
+````
+define('DB_DNS', 'mysql:host=localhost;dbname=places');
+define('DB_USER', 'root');
+define('DB_PASSWORD', 'root');
+````
+
+### 3) Edit /app/js/App.js
+
+Set the constant host, according to your virtualhost
+
+````
+Config.host = 'http://rest.dev';
+````
+
+## Lauch the Application
+````
+http://rest.dev/app
+````
+
+
+## WSDL & XSD
+
+**[http://rest.dev/soap/server/server.php?wsdl](http://rest.dev/soap/server/server.php?wsdl)**
+
+**[http://rest.dev/soap/data/shema.xsd](http://rest.dev/soap/data/shema.xsd)**
+
