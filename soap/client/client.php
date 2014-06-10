@@ -5,8 +5,7 @@
 		public $_client;
 
 		public function __construct(){
-
-			$this->_client = new nusoap_client("http://rest.dev/soap/server/server.php?wsdl");
+			$this->_client = new nusoap_client(FULL_HOST . "soap/server/server.php?wsdl");
 		}
 
 		public function getComments($townId){

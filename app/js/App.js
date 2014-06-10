@@ -3,7 +3,7 @@ $(function () {
 	var App = {};
 	var Config = {};
 
-	Config.host = 'http://' + window.location.hostname;
+	Config.host = 'http://rest.dev';
 	Config.requestApi = Config.host + '/app/ajax';
 
 
