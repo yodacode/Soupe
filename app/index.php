@@ -1,7 +1,5 @@
 <?php 	
-	require_once('../rest/client/client.php');
-	
-	var_dump($_GET);
+	require_once('../config.php');
 	
 	$clientRest = new clientRest();
 	$places = $clientRest->getPlaces($_GET);

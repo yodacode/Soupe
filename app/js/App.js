@@ -1,6 +1,11 @@
 $(function () {
 
 	var App = {};
+	var Config = {};
+
+	Config.host = 'http://' + window.location.hostname;
+	Config.requestApi = Config.host + '/app/ajax';
+
 
 	App.Seach = {
 		init: function () {
@@ -44,7 +49,7 @@ $(function () {
 		},
 		getTowns: function (countryId, callback) {
 			$.ajax({
-				url: 'http://rest.dev/app/ajax/get-towns.php?country_id=' + countryId,
+				url: Config.requestApi + '/get-towns.php?country_id=' + countryId,
 				type: 'GET',
 				dataType: "xml",
 				complete: function (data) {
@@ -55,7 +60,7 @@ $(function () {
 		},
 		getCountries: function (callback) {
 			$.ajax({
-				url: 'http://rest.dev/app/ajax/get-countries.php',
+				url: Config.requestApi + '/get-countries.php',
 				type: 'GET',
 				dataType: "xml",
 				complete: function (data) {
@@ -119,7 +124,7 @@ $(function () {
 		getComments: function (townId, callback) {
 
 			$.ajax({
-				url: 'http://rest.dev/app/ajax/get-comments.php?place_id=' + townId,
+				url: Config.requestApi + '/get-comments.php?place_id=' + townId,
 				type: 'GET',
 				dataType: "xml",
 				complete: function (data) {
@@ -129,11 +134,11 @@ $(function () {
 			});
 		},
 		addComment: function (data) {
-			
+
 			$.ajax({
-				url: 'http://rest.dev/app/ajax/add-comment.php',
+				url: Config.requestApi + '/add-comment.php',
 				type: 'POST',
-				data: data,				
+				data: data,
 				complete: function (data) {
 					window.location.reload();
 				}
@@ -144,7 +149,7 @@ $(function () {
 
 	App.Maps = {
 		init: function () {
-			this.container = $("#map-canvas");		
+			this.container = $("#map-canvas");
 			var lat = this.container.attr('data-lat'),
 				lng = this.container.attr('data-lng');
 
@@ -152,11 +157,11 @@ $(function () {
 		},
 		build: function (lat, lng) {
 			var latlng, map, mapOptions, marker;
-			
+
 			latlng = new google.maps.LatLng(lat, lng);
-			
+
 			mapOptions = {
-			  zoom: 8,
+			  zoom: 13,
 			  center: latlng
 			};
 

@@ -1,5 +1,5 @@
 <?php 
-	require "../lib/nusoap.php";	
+	require_once("../../config.php");
 
 	function getComments($place_id) {
 

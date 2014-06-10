@@ -1,15 +1,10 @@
 <?php
 
-	require_once("Rest.inc.php");
+	require_once("../../config.php");
 
 	class API extends REST {
 
 		public $data = "";
-
-		const DB_DNS = "mysql:host=localhost;dbname=places";
-		const DB_USER = "root";
-		const DB_PASSWORD = "root";
-
 
 		private $db = NULL;
 
@@ -24,7 +19,7 @@
 		private function dbConnect(){
 
 			try {
-				$this->db = new PDO(self::DB_DNS, self::DB_USER, self::DB_PASSWORD);
+				$this->db = new PDO(DB_DNS, DB_USER, DB_PASSWORD);
 			} catch (Exception $e) {
 				return 'Erreur : '. $e->getMessage();
 			}
@@ -49,7 +44,7 @@
 			if($this->get_request_method() != "GET"){
 				$this->response('',406);
 			}
-			
+
 			$sql = sprintf('SELECT * FROM place %s %s',
                !empty($this->_request['id']) ? 'WHERE id = :id' : null,
                !empty($this->_request['town_id']) ? 'WHERE town_id = :town_id' : null);
@@ -86,7 +81,7 @@
 			}
 
 			$params = array(
-				'id' => $this->_request['id']		
+				'id' => $this->_request['id']
 			);
 
 			//if there is missing parameters
@@ -130,7 +125,7 @@
 		}
 
 		private function towns(){
-			
+
 			if($this->get_request_method() != "GET"){
 				$this->response('',406);
 			}
@@ -156,14 +151,14 @@
 		}
 
 		private function countries(){
-			
+
 			if($this->get_request_method() != "GET"){
 				$this->response('',406);
 			}
 
-			$sql = sprintf('SELECT * FROM country');               
+			$sql = sprintf('SELECT * FROM country');
 
-			$request = $this->db->prepare($sql);			
+			$request = $this->db->prepare($sql);
 
 			$request->execute();
 			$result = $request->fetchAll(PDO::FETCH_ASSOC);

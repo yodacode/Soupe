@@ -1,6 +1,5 @@
 <?php
-
-	require_once('../../rest/client/client.php');
+	require_once("../../config.php");
 
 	$clientRest = new clientRest();
 	$towns = $clientRest->getCountries();
