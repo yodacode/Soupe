@@ -1,4 +1,4 @@
-# SOAP & REST 
+# Soupe
 ## Installation
 ### 1) Install BDD
 
