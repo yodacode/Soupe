@@ -75,8 +75,7 @@
 		        	            	  <div class="form-group">
 		        	            	    <label for="rate">Note</label>
 		        	            	    <!-- <input type="text" name="rate" id="rate" class="form-control" placeholder="Note"/> -->
-		        	            	    <select class="form-control" name="rate" id="rate">
-		        	            	    	<option></option>
+		        	            	    <select class="form-control" name="rate" id="rate">		        	            	    	
 		        	            	    	<option value="1">1</option>
 		        	            	    	<option value="2">2</option>
 		        	            	    	<option value="3">3</option>
