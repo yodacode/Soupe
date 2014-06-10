@@ -91,6 +91,9 @@ $(function () {
 			var that = this;
 			this.getComments(that.status.currentPlaceId, function (xml) {
 				that.createThumb(xml.find('item'));
+				if (App.Counter) {
+					App.Counter.init();
+				}
 			});
 		},
 		bind: function () {
@@ -176,6 +179,38 @@ $(function () {
 
 	};
 	App.Maps.init();
+
+	App.Counter = {
+		init: function () {
+			this.UI = {};
+			this.UI.counterComments = $('.counter-comments');
+			this.UI.counterRate = $('.counter-rate');
+
+			this.build();
+		},
+		build: function () {
+			this.UI.counterComments.text(this.countComments() + ' avis');
+			this.UI.counterRate.text(this.countRate() + ' /10');
+		},
+		countComments: function () {
+			return $('.item.comment').length - 1;
+		},
+		countRate: function () {
+			var rate = 0,
+				ratesContainer = $('.item.comment .rate'),
+				size = ratesContainer.length - 1,
+				result;
+
+			ratesContainer.each(function () {
+				rate += parseInt($(this).text());
+			});
+			
+			result = rate / size;
+
+			return isNaN(result) ? 0 : result;
+		}
+	};
+
 
 
 

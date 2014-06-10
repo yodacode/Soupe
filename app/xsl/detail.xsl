@@ -16,8 +16,8 @@
 		    					<p><strong><xsl:value-of select="address"/></strong></p>
 		    				</div>
 		    				<div class="col-md-12 space">
-		    					<div class="col-md-6"><span class="label label-danger">7/10</span></div>
-		    					<div class="col-md-6"><span class="label label-success">3 Avis</span></div>
+		    					<div class="col-md-6"><span class="label label-danger counter-rate">7/10</span></div>
+		    					<div class="col-md-6"><span class="label label-success counter-comments">3 Avis</span></div>
 		    				</div>
 		    				<div class="col-md-12 space">
 		    					<p><xsl:value-of select="description"/></p>
@@ -45,7 +45,7 @@
 		    				<div class="item comment" style="min-height:145px">
 		    					<div class="col-md-5">
 		    						<h3 class="author">Avis de Michel Dupont</h3>
-		    						<p><strong><span class="rate">7</span>/10</strong></p>
+		    						<p><strong><span class="rate">0</span>/10</strong></p>
 		    					</div>
 		    					<div class="col-md-7">
 		    						<p class="content"></p>
@@ -74,7 +74,20 @@
 		        	            	  </div>
 		        	            	  <div class="form-group">
 		        	            	    <label for="rate">Note</label>
-		        	            	    <input type="text" name="rate" id="rate" class="form-control" placeholder="Note"/>
+		        	            	    <!-- <input type="text" name="rate" id="rate" class="form-control" placeholder="Note"/> -->
+		        	            	    <select class="form-control" name="rate" id="rate">
+		        	            	    	<option></option>
+		        	            	    	<option value="1">1</option>
+		        	            	    	<option value="2">2</option>
+		        	            	    	<option value="3">3</option>
+		        	            	    	<option value="4">4</option>
+		        	            	    	<option value="5">5</option>
+		        	            	    	<option value="6">6</option>
+		        	            	    	<option value="7">7</option>
+		        	            	    	<option value="8">8</option>
+		        	            	    	<option value="9">9</option>
+		        	            	    	<option value="10">10</option>
+		        	            	    </select>
 		        	            	  </div>
 		        	            	  <div class="form-group">
 		        	            	    <label for="content">Content</label>

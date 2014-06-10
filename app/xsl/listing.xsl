@@ -5,7 +5,6 @@
 
  	<xsl:template match="root">
 
-
 	    <xsl:call-template name="layout">
 	    		<xsl:with-param name="content">
 	    			<div id="page-listing">
@@ -58,8 +57,6 @@
   						<xsl:value-of select="name"/>
   					</a>
   				</h3>
-  				<div class="col-md-6"><strong>7/10</strong></div>
-  				<div class="col-md-6">3 Avis</div>
   			</div>
   			<div class="col-md-6" style="min-height:150px;">
   				<p><strong><xsl:value-of select="address"/></strong></p>
