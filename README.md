@@ -87,6 +87,8 @@ http://rest.dev/app
 #### Add comment (POST)
 * http://rest.dev/app/ajax/add-comment.php
 
+**Params:** 
+
 * STRING : 	'author'
 * STRING : 	'content'
 * STRING : 	'rate'
