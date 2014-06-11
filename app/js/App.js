@@ -94,7 +94,7 @@ $(function () {
 				if (App.Counter) {
 					App.Counter.init();
 					if (App.Counter.countComments() == 0) {
-						that.UI.container.html('<h3>Pas d\'avis sur cette place...</h3>');
+						that.UI.container.append('<h3>Pas d\'avis sur cette place...</h3>');
 					}
 				}
 			});

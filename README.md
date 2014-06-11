@@ -2,9 +2,12 @@
 ## Installation
 ### 1) Install BDD
 
-You can import datas with this dump
-**[BDD](https://github.com/yodacode/Soupe/blob/master/places.sql)**
+You can import datas
+**[BDD](https://github.com/yodacode/Soupe/blob/master/places.sql)** for REST and comments.xml for SOAP
 
+````
+sudo chmod 777 comments.xml
+````
 
 ### 2) Create a virtualhost
 ````
