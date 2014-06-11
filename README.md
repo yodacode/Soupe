@@ -48,3 +48,42 @@ http://rest.dev/app
 
 **[http://rest.dev/soap/data/shema.xsd](http://rest.dev/soap/data/shema.xsd)**
 
+## Requests
+### REST
+
+#### Get places (GET)
+* http://rest.dev/rest/server/places/  
+* http://rest.dev/rest/server/places?id=X 
+* http://rest.dev/rest/server/places?town_id=X
+
+#### Delete place (DELETE)
+* http://rest.dev/rest/server/deletePlace/?id=X
+
+
+#### Add place (POST)
+* http://rest.dev/rest/server/addPlace
+
+
+**Params:** 
+
+* STRING : 'name'
+* STRING : 'address'
+* STRING : 'description'
+* INT: 'longitude'
+* INT:  'latitude'
+* INT : 'town_id'
+
+#### Get Towns (GET)
+* http://rest.dev/rest/server/towns
+
+#### Get Countries (GET)
+* http://rest.dev/rest/server/countries
+
+
+### SOAP
+#### Get comments (GET)
+* http://rest.dev/get-comments.php?place_id=X
+
+#### Add comment (POST)
+* http://rest.dev/add-comment.php
+
