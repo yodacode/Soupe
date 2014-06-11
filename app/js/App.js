@@ -93,6 +93,9 @@ $(function () {
 				that.createThumb(xml.find('item'));
 				if (App.Counter) {
 					App.Counter.init();
+					if (App.Counter.countComments() == 0) {
+						that.UI.container.html('<h3>Pas d\'avis sur cette place...</h3>');
+					}
 				}
 			});
 		},
@@ -204,7 +207,7 @@ $(function () {
 			ratesContainer.each(function () {
 				rate += parseInt($(this).text());
 			});
-			
+
 			result = rate / size;
 
 			return isNaN(result) ? 0 : result;
