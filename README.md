@@ -66,12 +66,12 @@ http://rest.dev/app
 
 **Params:** 
 
-* STRING : 'name'
-* STRING : 'address'
-* STRING : 'description'
-* INT: 'longitude'
-* INT:  'latitude'
-* INT : 'town_id'
+* STRING : 	'name'
+* STRING : 	'address'
+* STRING : 	'description'
+* INT: 		'longitude'
+* INT:  	'latitude'
+* INT : 	'town_id'
 
 #### Get Towns (GET)
 * http://rest.dev/rest/server/towns
@@ -82,8 +82,14 @@ http://rest.dev/app
 
 ### SOAP
 #### Get comments (GET)
-* http://rest.dev/get-comments.php?place_id=X
+* http://rest.dev/app/ajax/get-comments.php
 
 #### Add comment (POST)
-* http://rest.dev/add-comment.php
+* http://rest.dev/app/ajax/add-comment.php
+
+* STRING : 	'author'
+* STRING : 	'content'
+* STRING : 	'rate'
+* INT: 		'place_id'
+
 
